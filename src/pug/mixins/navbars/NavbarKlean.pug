@@ -1,0 +1,21 @@
+mixin NavbarKlean
+  nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3(data-navbar-on-scroll)
+    .container
+      a.navbar-brand.d-flex.align-items-center.fw-semi-bold.fs-3(href='index.html') 
+        img(src=`${CWD}assets/img/gallery/logo.png` alt='').me-3
+      button.navbar-toggler.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
+        ul.navbar-nav.me-auto.pt-2.pt-lg-0.font-base
+          li.nav-item.px-2(data-anchor)
+            a.nav-link.fw-medium(aria-current='page', href='index.html' class= currentPage === 'index' ? 'active' : false ) Home
+          li.nav-item.px-2(data-anchor)
+            a.nav-link(href='#events') Events
+          li.nav-item.px-2(data-anchor)
+            a.nav-link(href='#services') Our Services  
+          li.nav-item.px-2(data-anchor)
+            a.nav-link(href='#testimonial') Testimonial 
+          li.nav-item.px-2(data-anchor)
+            a.nav-link(href='#country') Country 
+        form.ps-lg-5
+          button.btn.klean-btn-outline.order-0(type='submit') Apply

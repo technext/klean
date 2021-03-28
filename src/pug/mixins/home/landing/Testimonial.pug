@@ -1,0 +1,72 @@
+append variables
+  -
+    var testimonials= [
+      {
+        image:'user-1.png',
+        name: 'Harrison Phillips',
+        degignations: 'reporter',
+        text: 'Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos ratione quia aut molestiae velit et.',
+      },
+      {
+        image:'user-2.png',
+        name: 'Ainara Vergara',
+        degignations: 'Landscape',
+        text: 'Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos ratione quia aut molestiae velit et.',
+      },
+      {
+        image:'user-3.png',
+        name: 'Niek Bove',
+        degignations:'Senior Developer',
+        text:'Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos ratione quia aut molestiae velit et.',
+      },
+    
+    ];
+
+
+mixin Testimonial(config)
+  .col-md-6.mb-4
+    .card.h-100.shadow.card-span.p-3
+      .card-body
+        .d-flex.align-items-center
+          img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}` alt="testimonials")
+          .flex-1.ms-4
+            h6.fw-light.fs-lg-1.mb-1=config.name
+            p.fw-normal.mb-0.text-800=config.degignations
+        p.mb-0.mt-4.fw-light.lh-lg=config.text
+
+mixin Testimonials
+  +Section#testimonial
+    .row
+      .col-lg-7.mx-auto.text-center.my-5
+        h5.fw-light.fs-3.fs-lg-5.lh-sm.mb-4 Testimonial
+        p.mb-5 Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum, alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.
+    .row.flex-center.h-100
+      .col-xl-9
+        #carouselTestimonials.carousel.slide(data-bs-ride='carousel')
+          .carousel-inner
+            .carousel-item.active(data-bs-interval='10000')
+              .row.h-100.justify-content-center                
+                +Testimonial(testimonials[0])                  
+                +Testimonial(testimonials[1])                                                   
+            .carousel-item(data-bs-interval='5000')
+              .row.h-100.justify-content-center                
+                +Testimonial(testimonials[2])                  
+                +Testimonial(testimonials[0])  
+            .carousel-item(data-bs-interval='3000')
+              .row.h-100.justify-content-center                
+                +Testimonial(testimonials[1])                  
+                +Testimonial(testimonials[2])                      
+            .carousel-item
+              .row.h-100.justify-content-center          
+                +Testimonial(testimonials[0])
+                +Testimonial(testimonials[1])
+              
+                                           
+          .row.mt-5.flex-center
+            .col-auto.position-relative.z-index-2
+              ol.carousel-indicators
+                li.active.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='0')
+                li.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='1')
+                li.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='2')
+                li.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='3')
+

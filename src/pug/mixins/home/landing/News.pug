@@ -1,0 +1,49 @@
+append variables
+  -
+    var news= [
+      {
+        image:'news-1.png',
+        date  :'17 April 2021',
+        title: 'Come On In. The Water’s Fine (Mostly).',
+      },
+      {
+        image:'news-2.png',
+        date  :'17 April 2021',
+        title: 'Trump Lays Plans to Reverse Obama’s Climate Change',
+      },
+      {
+        image:'news-3.png',
+        date  :'17 April 2021',
+        title: 'How a Little Bit of Hydra Regrows a Whole Animal',
+      },
+    
+    ];
+
+
+mixin NewsCard(config)
+  .col-md-4.mb-4
+    .card.h-100.shadow.card-span
+      img.card-img-top(src=`${CWD}assets/img/gallery/${config.image}`  alt='news')
+      .card-body
+        svg.bi.bi-calendar2.me-2(xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='currentColor' viewBox='0 0 16 16')
+          path(d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z')
+          path(d='M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z') 
+        span.fs--1=config.date
+        h5.fs-lg-1.my-3=config.title
+
+mixin News
+  +Section.bg-100
+    .row
+      .col-lg-7.mx-auto.text-center.my-5
+        h5.fw-light.fs-3.fs-lg-5.lh-sm.mb-4 News
+        p.mb-3 Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum teneam sententiam, quid bonum esse vult.
+    .row.flex-center.h-100
+      .col-xl-9
+        .row.justify-content-center
+          each NewsCard in news
+            +NewsCard(NewsCard)
+      .col-lg-12.d-flex.justify-content-center.my-3
+        button.btn.btn-lg.btn-primary.fw-light(type='submit') Join Here
+          svg.bi.bi-arrow-right-short(xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='currentColor' viewBox='0 0 16 16')
+            path(fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z')
+

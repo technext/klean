@@ -1,0 +1,13 @@
+mixin Brand(image)
+  .col-6.col-md-4.col-xl-2.text-xl-start&attributes(attributes)
+    img(src=`${CWD}assets/img/gallery/${image}`  alt='brands').mb-4
+
+mixin Brands
+  +Section
+    .row.align-items-center.justify-content-xl-between
+      +Brand('google.png')                  
+      +Brand('netflix.png')                  
+      +Brand('microsoft.png')                                   
+      +Brand('theme-wagon.png')                
+      +Brand('mailbluster.png')   
+  

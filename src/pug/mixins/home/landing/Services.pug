@@ -1,0 +1,45 @@
+append variables
+  -
+    var services= [
+      {
+        image:'text.png',
+        title  :'Send Texts Instantly',
+        text: 'Manage costs, build forecasts, and adapt quickly as demand and budgets change.',
+      },
+      {
+        image:'organized.png',
+        title  :'University Admissions',
+        text: 'Modern tools, certified HR advisors, and expert guides to help you stay compliant.',
+      },
+      {
+        image:'statistics.png',
+        title  :'Visa COnsultancy',
+        text: 'Get your team in sync with messages, real-time alerts, reminders, and more.',
+      },
+      
+    ];
+
+mixin Service(config)
+  .col-md-4.mb-4
+    .card.h-100.shadow.px-4.px-md-2.px-lg-3.px-xxl-4.pt-4
+      .text-center.card-hover
+        img(src=`${CWD}assets/img/icons/${config.image}` width="100" alt='services').my-5
+        .card-body.text-center.text-md-start
+          h6.fw-bold.fs-1.heading-color=config.title
+          p.mt-3.mb-md-0.mb-lg-3=config.text
+          a.btn.btn-lg.ps-0.pe-3.text-primary(href='#' role='button') Learn more
+            svg.bi.bi-arrow-right-short(xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='currentColor' viewBox='0 0 16 16')
+              path(fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z')
+
+
+mixin Services
+  +Section#services.py-0
+    .row
+      .col-lg-7.col-xxl-5.mx-auto.text-center.mb-4
+        h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Service
+        p.mb-5 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by ThemeWagon
+    .row.flex-center.h-100
+      .col-xl-9
+        .row.justify-content-center
+          each Service in services
+            +Service(Service)

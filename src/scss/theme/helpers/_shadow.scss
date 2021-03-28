@@ -1,0 +1,26 @@
+.shadow-transition {
+  box-shadow:  0 25px 45px rgba($gray-900, .075);
+  transition: box-shadow 0.4s ease;
+}
+
+.box-shadow-klean {
+  transition:  all 0.4s ease-in-out;
+  box-shadow: 80px 80px $pink ;
+  border-radius: 86px;
+ 
+  @include hover-focus() {
+    transform: translate3d(-5px, -5px, 0);
+    box-shadow: 80px 80px $indigo;
+  }
+}
+.box-shadow-all {
+  box-shadow: 0px 2px 8px $pink ;
+}
+.box-shadow-b {
+  transition:  all 0.4s ease-in-out;
+  box-shadow: 0px 15px 0px -8px $green;
+  @include hover-focus() {
+    transform: translate3d(0,-5px,0);
+    box-shadow: 80px 80px $indigo;
+  }
+}
