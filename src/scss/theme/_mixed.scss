@@ -143,3 +143,46 @@
 .backdrop{
   backdrop-filter: blur(3px);
 }
+
+.circle-blend {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    z-index: -1 !important;
+    top: 0;
+    left: 0;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+.circle-danger {
+  &:before {
+    box-shadow: 0 0 200px 60px $danger;
+  }
+}
+
+// .circle-warning {
+//   &:before {
+//     // box-shadow: 0 0 0 60px $warning;
+//   }
+// }
+
+.circle {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    z-index: -1 !important;
+    top: 0;
+    left: 0;
+    transform: translate3d(-50%, -50%, 0);
+    background-image: linear-gradient(200deg, rgba(86 , 151, 250 ,0), #4e92f94a);
+  }
+}

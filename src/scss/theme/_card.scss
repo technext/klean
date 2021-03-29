@@ -8,3 +8,9 @@
   }
 }
 
+.card-bg {
+  background-color: rgba($white, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba($white, 0.3);
+
+}

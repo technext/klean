@@ -21,7 +21,7 @@ append variables
 
 mixin Service(config)
   .col-md-4.mb-4
-    .card.h-100.shadow.px-4.px-md-2.px-lg-3.px-xxl-4.pt-4
+    .card.card-bg.h-100.px-4.px-md-2.px-lg-3.px-xxl-4.pt-4
       .text-center.card-hover
         img(src=`${CWD}assets/img/icons/${config.image}` width="100" alt='services').my-5
         .card-body.text-center.text-md-start
@@ -40,6 +40,6 @@ mixin Services
         p.mb-5 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by ThemeWagon
     .row.flex-center.h-100
       .col-xl-9
-        .row.justify-content-center
+        .row.justify-content-center.circle.circle-warning
           each Service in services
             +Service(Service)

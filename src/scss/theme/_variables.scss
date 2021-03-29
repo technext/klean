@@ -39,18 +39,18 @@ $grid-gutter-width: 2rem !default;
 //-----------------------------------------------*/
 
 $white: #fff !default;
-$gray-100: #FAFAFA  !default;
-$gray-200: #E8E5E9 !default;
-$gray-300: #DFDBDF !default;
-$gray-400: #D5D1D6 !default;
-$gray-500: #CCC6CD !default;
-$gray-600:  #C3BCC4 !default;
-$gray-700:  #B9B1BB !default;
-$gray-800: #B0A7B2 !default;
-$gray-900: #A79CA8 !default;
-$gray-1000: #778295 !default;
-$gray-1100: #44224B !default;
-$gray-1200: #091E40 !default;
+$gray-100: #B4D2FF  !default;
+$gray-200: #A2BDE5 !default;
+$gray-300: #90A8CC !default;
+$gray-400: #7E92B2 !default;
+$gray-500: #6C7E99 !default;
+$gray-600:  #5A6980 !default;
+$gray-700:  #485466 !default;
+$gray-800: #363F4D !default;
+$gray-900: #242A33 !default;
+$gray-1000: #12151A !default;
+$gray-1100: #000000 !default;
+$gray-1200: #242A33 !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -212,7 +212,7 @@ $spacers: map-merge(
 //|   Body
 //-----------------------------------------------*/
 $body-bg: $white !default;
-$body-color: $gray-1000 !default;
+$body-color: $gray-500 !default;
 
 //*-----------------------------------------------
 //|   Link
@@ -418,9 +418,7 @@ $hr-opacity: 1 !default;
 //*-----------------------------------------------
 //|   card
 //-----------------------------------------------*/
-$card-border-width:                 2px !default;
 $card-border-radius:                2.5rem !default;
-$card-border-color:                 rgba($gray-500, .11) !default;
 $card-cap-bg:                        tint-color($gray-500, 90%) !default;
 
 
