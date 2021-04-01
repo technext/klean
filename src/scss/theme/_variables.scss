@@ -79,21 +79,21 @@ $grays: map-merge(
 //-----------------------------------------------*/
 $blue: #4E92F9 !default;
 $indigo: #4E92F9 !default;
-$purple: #ad71ff !default;
+$purple: #C46DE3 !default;
 $pink: #C381DB !default;
-$red: #ff717c !default;
+$red: #EB6453 !default;
 $orange: #ff8125 !default;
-$yellow: #ffee25 !default;
-$green: #5fa500 !default;
+$yellow: #EFAB18 !default;
+$green: #96D121 !default;
 $teal: #00a598 !default;
-$cyan: #3EB8F4 !default;
+$cyan: #21D4DF !default;
 $light: #F9FAFD !default;
 
 //*-----------------------------------------------
 //|   Theme Colors
 //-----------------------------------------------*/
 $primary: $blue !default;
-$secondary: $gray-900 !default;
+$secondary: $purple !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -120,14 +120,14 @@ $theme-color-interval: 8% !default;
 $theme-colors-soft: () !default;
 $theme-colors-soft: map-merge(
   (
-    'primary': tint-color($primary, 90),
-    'secondary': tint-color($secondary, 90),
-    'success': tint-color($success, 90),
-    'info': tint-color($info, 90),
-    'warning': tint-color($warning, 90),
-    'danger': tint-color($danger, 90),
-    'light': tint-color($light, 90),
-    'dark': tint-color($dark, 90),
+    'primary': tint-color($primary, 85),
+    'secondary': tint-color($secondary,85),
+    'success': tint-color($success,85),
+    'info': tint-color($info,85),
+    'warning': tint-color($warning,85),
+    'danger': tint-color($danger,85),
+    'light': tint-color($light,85),
+    'dark': tint-color($dark,85),
   ),
   $theme-colors-soft
 );
@@ -317,10 +317,10 @@ $blockquote-font-size: $font-size-lg !default;
 //*-----------------------------------------------
 //|   Buttons and Forms
 //-----------------------------------------------*/
-$input-bg           :  tint-color($primary, 90) !default;
-$input-placeholder-color:     tint-color($primary, 40) !important;
+$input-bg           :  tint-color($gray-300, 90) !default;
+$input-placeholder-color:     tint-color($gray-300, 10) !important;
 $input-btn-padding-y: .5rem !default;
-$input-btn-padding-x: 1.80rem !default;
+$input-btn-padding-x: 2.6rem !default;
 
 $input-btn-padding-y-sm: .10rem !default;
 $input-btn-padding-x-sm: 0.5rem !default;
@@ -429,32 +429,12 @@ $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
 $carousel-control-color:             $gray-1000 !default;
 
-$carousel-indicator-active-bg:       $primary !default;
-$carousel-indicator-width:           7px !default;
-$carousel-indicator-height:          7px !default;
+$carousel-indicator-active-bg:       $indigo !default;
+$carousel-indicator-width:           17px !default;
+$carousel-indicator-height:          9px !default;
 $carousel-indicator-hit-area-height : 0 !default;
 
 
 $carousel-control-prev-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
 $carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
 
-
-// Accordion
-$accordion-padding-y:                     1.5rem !default;
-$accordion-padding-x:                     2.6rem !default;
-$accordion-bg:                            $white !default;
-$accordion-border-width:                  $border-width !default;
-$accordion-border-color:                  rgba($white, .125) !default;
-$accordion-border-radius:                 0 !default;
-
-$accordion-button-active-bg:              $white !default;
-$accordion-button-active-color:           $dark !default;
-
-$accordion-button-focus-border-color:     $white !default;
-$accordion-button-focus-box-shadow:       $light !default;
-
-$accordion-icon-width:                    1.8rem !default;
-$accordion-icon-active-color:             $dark !default;
-
-$accordion-button-icon:         url("") !default;
-$accordion-button-active-icon:  url("") !default;

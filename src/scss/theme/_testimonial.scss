@@ -40,17 +40,17 @@
   position: static;
   justify-content: start;
   margin:  0;
+  
 
  li{
   border-radius: 50%;
-
+  border-radius: 10px;
  }
 
   .active {
     opacity: $carousel-indicator-active-opacity;
-    background-color: $primary;
-    width: 8px;
-    height:8px;
+    width: 17px;
+    border-radius: 10px;
   }
 }
 
@@ -58,8 +58,5 @@
   left: auto;
   right: 45px;
 }
-// .carousel-control-next {
-//   right: 0;
-//   left: 0;
-// }
+
 

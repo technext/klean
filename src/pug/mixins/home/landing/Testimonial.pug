@@ -2,71 +2,90 @@ append variables
   -
     var testimonials= [
       {
-        image:'user-1.png',
-        name: 'Harrison Phillips',
-        degignations: 'reporter',
-        text: 'Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos ratione quia aut molestiae velit et.',
+        
+        image:'testimonial-1.png',
+        title:'Excellent !',
+        name: 'Daniel Lane,',
+        degignations: 'Developer',
+        text: 'I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.',
       },
       {
-        image:'user-2.png',
-        name: 'Ainara Vergara',
-        degignations: 'Landscape',
-        text: 'Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos ratione quia aut molestiae velit et.',
+        image:'testimonial-1.png',
+        title:'Excellent !',
+        name: 'Ainara Vergara,',
+        degignations: 'Designer',
+        text: 'I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.',
       },
       {
-        image:'user-3.png',
-        name: 'Niek Bove',
+        image:'testimonial-1.png',
+        title:'Excellent !',
+        name: 'Niek Bove,',
         degignations:'Senior Developer',
-        text:'Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos ratione quia aut molestiae velit et.',
+        text:'I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.',
+      },
+      {
+        image:'testimonial-1.png',
+        title:'Excellent !',
+        name: 'Niek Bove,',
+        degignations:'Senior Developer',
+        text:'I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.',
       },
     
     ];
 
 
 mixin Testimonial(config)
-  .col-md-6.mb-4
-    .card.h-100.shadow.card-span.p-3
-      .card-body
-        .d-flex.align-items-center
-          img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}` alt="testimonials")
-          .flex-1.ms-4
-            h6.fw-light.fs-lg-1.mb-1=config.name
-            p.fw-normal.mb-0.text-800=config.degignations
-        p.mb-0.mt-4.fw-light.lh-lg=config.text
+  .col-md-5
+    img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}` alt="testimonials")
+  .col-md-7.mb-4
+    img.img-fluid(src=`${CWD}assets/img/gallery/quotation.png` alt="testimonials-bg")
+    h5.fw-bold.text-gradient.fs-4.mt-4!=config.title
+    p.mt-4=config.text
+    .my-4
+      svg.bi.bi-star-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#FFCC00' viewBox='0 0 16 16')
+        path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
+      svg.bi.bi-star-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#FFCC00' viewBox='0 0 16 16')
+        path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
+      svg.bi.bi-star-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#FFCC00' viewBox='0 0 16 16')
+        path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
+      svg.bi.bi-star-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#FFCC00' viewBox='0 0 16 16')
+        path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
+      svg.bi.bi-star-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#FFCC00' viewBox='0 0 16 16')
+        path(d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z')
+      
+    h6.fw-bold.fs-lg-1!=config.name
+      span.ms-2.fw-normal.text-400.fs--1=config.degignations
+      
 
 mixin Testimonials
   +Section#testimonial
     .row
-      .col-lg-7.mx-auto.text-center.my-5
-        h5.fw-light.fs-3.fs-lg-5.lh-sm.mb-4 Testimonial
-        p.mb-5 Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum, alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.
+      .col-lg-7.mx-auto.text-center.mb-9
+        h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 What our clients have to say
+        p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
+          span.fw-bold ThemeWagon
     .row.flex-center.h-100
       .col-xl-9
         #carouselTestimonials.carousel.slide(data-bs-ride='carousel')
           .carousel-inner
             .carousel-item.active(data-bs-interval='10000')
-              .row.h-100.justify-content-center                
-                +Testimonial(testimonials[0])                  
-                +Testimonial(testimonials[1])                                                   
+              .row.h-100.align-items-center                
+                +Testimonial(testimonials[0])                                                                    
             .carousel-item(data-bs-interval='5000')
-              .row.h-100.justify-content-center                
-                +Testimonial(testimonials[2])                  
-                +Testimonial(testimonials[0])  
+              .row.h-100.align-items-center                
+                +Testimonial(testimonials[1])                    
             .carousel-item(data-bs-interval='3000')
-              .row.h-100.justify-content-center                
-                +Testimonial(testimonials[1])                  
+              .row.h-100.align-items-center                                  
                 +Testimonial(testimonials[2])                      
             .carousel-item
-              .row.h-100.justify-content-center          
-                +Testimonial(testimonials[0])
-                +Testimonial(testimonials[1])
-              
-                                           
-          .row.mt-5.flex-center
+              .row.h-100.align-items-center          
+                +Testimonial(testimonials[3])
+                                              
+          .row.mt-1.flex-center
             .col-auto.position-relative.z-index-2
-              ol.carousel-indicators
-                li.active.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='0')
-                li.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='1')
-                li.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='2')
-                li.mx-2(data-bs-target='#carouselTestimonials' data-bs-slide-to='3')
+              ol.carousel-indicators.me-xxl-6.me-xl-4.me-lg-5
+                li.active(data-bs-target='#carouselTestimonials' data-bs-slide-to='0')
+                li(data-bs-target='#carouselTestimonials' data-bs-slide-to='1')
+                li(data-bs-target='#carouselTestimonials' data-bs-slide-to='2')
+                li(data-bs-target='#carouselTestimonials' data-bs-slide-to='3')
 
