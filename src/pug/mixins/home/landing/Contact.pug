@@ -2,8 +2,12 @@ mixin Contact
   section
     +Background({image: `${CWD}assets/img/gallery/contact-bg.png`, attrs: { style: { 'background-position': 'center right ', 'background-size': 'contain'} }, className: '' })
     .container
+      //- .row 
+      //-   .col-lg-7.col-xxl-5.mx-auto.text-center.mb-7
+      //-     h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Contact Us
+
       .row.flex-center
-        .col-lg-5
+        .col-lg-5.mb-5
           .card.card-bg.p-2
             .card-body
               form
@@ -30,7 +34,6 @@ mixin Contact
                     .d-grid
                       a.btn.btn-light.hover-top.btn-glow.gradient-button.klean-btn.rounded-pill( type="submit")
                         | Submit  
-
         .col-lg-5.offset-lg-1
           .d-flex.align-items-center
             svg.bi.bi-telephone-fill.me-3(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#4E92F9' viewBox='0 0 16 16')

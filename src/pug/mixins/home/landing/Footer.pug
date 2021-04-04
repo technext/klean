@@ -1,6 +1,6 @@
 mixin FooterList(...items)
   each item in items
-    li.mb-3
+    li.mb-2
       a.text-400.text-decoration-none(href='#!')
         =item
 
@@ -12,41 +12,54 @@ mixin Footer
         .col-6.col-sm-4.col-lg-auto.mb-3
           h5.text-600.mb-3.fw-bold About
           ul.list-unstyled.mb-md-4.mb-lg-0
-            +FooterList('About Us','Team','Careers','Contact')
+            +FooterList('Prices','About','Resources','Team','Blog')
 
         .col-6.col-sm-4.col-lg-auto.mb-3
           h5.text-600.mb-3.fw-bold Resources 
           ul.list-unstyled.mb-md-4.mb-lg-0
-            +FooterList('Features','How it works','Pricing','Login')
+            +FooterList('Terms','Help','Privacy')
         .col-6.col-sm-4.col-lg-auto.mb-3
           h5.text-600.mb-3.fw-bold Team
           ul.list-unstyled.mb-md-4.mb-lg-0
-            +FooterList('Privacy','Terms','Security')
+            +FooterList('Dveloper','Designer')
         .col-6.col-sm-4.col-lg-auto.mb-3
           h5.text-600.mb-3.fw-bold Blog
           ul.list-unstyled.mb-md-4.mb-lg-0
-            +FooterList('Privacy','Terms','Security')    
-        .col-12.col-lg-auto.mb-3
-          //- .card.bg-success
-          //-   .card-body.p-sm-4
-          //-     h5.text-white Blog Zou
-          //-     p.mb-0.text-white write email to us
-          //-       span.text-white.fs--1.fs-sm-1 info@zoufarm.com
-          //-     button.btn.btn-light.text-success(type='button') 
-          //-       svg.bi.bi-person.me-1(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#76C279' viewBox='0 0 16 16')
-          //-         path(d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z')
-          //-       | Sing In
+            +FooterList('CEO','Lifestyle','Article','Tech')    
+        .col-9.col-sm-6.col-lg-auto.mb-3
+          h5.text-600.mb-3.fw-bold Follow Us
+           ul.list-unstyled.list-inline.my-3
+            li.list-inline-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/icons/facebook.png` alt='' width=20)
+            li.list-inline-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/icons/twitter.png` alt='' width=20)
+            li.list-inline-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/icons/linkdin.png` alt=''  width=20)
+            li.list-inline-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/icons/youtube.png` alt=''  width=20)                                 
+            li.list-inline-item
+              a.text-decoration-none(href='#!')
+          p.fw-semi-bold.mt-4.mb-3 Subscribe to our newsletter
+          label.col-sm-2.col-form-label.visually-hidden(for='inputEmail3') Email
+          .col-sm-12.input-group-icon
+            input.form-control.rounded-pill.border-white#inputEmail3(type='email' placeholder="Email" style='padding-left:1.5rem;padding-right:1.5rem;' )    
+            svg.bi.bi-envelope-fill.input-box-icon(xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='currentColor' viewBox='0 0 16 16' style='left:.5rem;')
+              path(d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z')
       hr.text-300.mb-0 
-      .row.flex-center.py-3
-        .col-12.col-sm-8.col-md-6.text-center.text-md-start 
-          
+      .row.justify-content-md-between.justify-content-evenly.py-3
+        .col-12.col-sm-8.col-md-6.col-lg-auto.text-center.text-md-start 
+          p.fs--1.my-2 All rights Reserved &copy; Your Company, 2021
       
         .col-12.col-sm-8.col-md-6
-           p.fs--1.text-dark.my-2.text-center.text-md-end &copy; This template is made with&nbsp;
-            svg.bi.bi-suit-heart-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#76C279' viewBox='0 0 16 16')
+           p.fs--1.my-2.text-center.text-md-end  made with&nbsp;
+            svg.bi.bi-suit-heart-fill(xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='#EB6453' viewBox='0 0 16 16')
               path(d='M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z')
 
             |&nbsp;by&nbsp;
-            a(href='https://themewagon.com/' target='_blank').text-dark ThemeWagon 
+            a(href='https://themewagon.com/' target='_blank').fw-bold.text-500 ThemeWagon 
    
         
