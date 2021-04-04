@@ -130,18 +130,16 @@
 
 
 
-// Pricing
-
-.card-price {
-  padding-left: .75rem;
-  padding-right: .75rem;
-  text-align: center;
-}
 
 // navbars
 
+.border-navbar-gradient{ 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.890625) 10.94%, #FFFFFF 86.46%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(60px);
+}
+
 .backdrop{
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(10px);
 }
 
 .circle-blend {
@@ -159,15 +157,46 @@
   }
 }
 
+.circle-blend-right {
+  &::before {
+    left: auto;
+    right: 0;
+  }
+}
+.circle-blend-left {
+  &::before {
+    right: auto;
+    left: 0;
+  }
+}
+
 .circle-danger {
   &:before {
     box-shadow: 0 0 200px 60px $danger;
   }
 }
 
+.circle-warning {
+  &:before {
+    box-shadow: 120px 0 780px 65px $warning;
+  }
+}
+
+.circle-cyan {
+  &:before {
+    box-shadow: 150px 250px 800px 60px $cyan;
+  }
+}
+.circle-primary {
+  &:before {
+    box-shadow: 0 0 300px 100px $primary;
+  }
+}
+
+
 // .circle-warning {
 //   &:before {
-//     // box-shadow: 0 0 0 60px $warning;
+//     box-shadow: 0 0 0 60px $warning;
 //   }
 // }
 

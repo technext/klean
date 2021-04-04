@@ -4,17 +4,14 @@ mixin HeroHeader
     +Background({image: `${CWD}assets/img/illustrations/heroheader-bg.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'contain',} }, className: '' })
     .container
       .row.align-items-center.min-vh-md-50.mt-7
-        //- .col-md-5.col-lg-6.order-md-1 
-        //-   img(src=`${CWD}assets/img/gallery/hero.png`  alt='hero').w-100
         .col-md-7.col-lg-6.py-6.text-sm-start.text-center
-          h1.fw-semi-bold.mt-.display-4.fs-4.fs-lg-6.fs-xxl-7.text-gradient  Bootstrap 5 theme
-            //- span.text-primary  crafted by ThemeWagon
-          h1 crafted by 
-            span.fw-semi-bold ThemeWagon
-          p.mb-5.fs-1 We’ve spent the last 7 years helping over 
-            span.text-primary 1 million people 
+          h1.fw-bold.display-4.fs-4.fs-lg-6.fs-xxl-7.text-gradient  Bootstrap 5 theme
+          h1.text-700 crafted by 
+            span.fw-bold ThemeWagon
+          p.mb-5.fs-0 We’ve spent the last 7 years helping over 
+            span.fw-bold.text-primary 1 million people 
             br 
             |like yourself to create stunning websites with minimum effort
-          a.btn.btn-lg.btn-light.hover-top.btn-glow.gradient-button.klean-btn(href='#')
+          a.btn.btn-lg.btn-light.hover-top.btn-glow.btn-gradient.btn-klean(href='#')
             | Check Demo
             

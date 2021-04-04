@@ -1,13 +1,25 @@
 mixin ProductTeam
-  +Section
-    .row.align-items-center
-      .col-md-6
-        img.img-fluid.mb-3(src=`${CWD}assets/img/gallery/product-team.png`   alt='...')
-      .col-md-6
+  section.circle-blend.circle-blend-left.circle-primary
+    +Background({image: `${CWD}assets/img/illustrations/product-bg.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover',} }, className: '' })
+    .container
+      .row.align-items-center
+        .col-md-6
+          img.img-fluid.mb-3(src=`${CWD}assets/img/gallery/product-team.png`   alt='...')
+        .col-md-6
           +InfoText({
             title:'A product team which <br> creates amazing UI/UX',
             details:'I cant do that as Bruce Wayne... as a man.Im flesh and blood. I can be ignored, destroyed. But as a symbol, I can be incorruptible, I can be everlasting.',
             text:' Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span>',
             buttonText:'Read More'
           })
-      
+      .row.align-items-center.pt-10
+        .col-md-6.order-md-1.text-center
+          img.img-fluid.mb-3(src=`${CWD}assets/img/gallery/dedicated.png`  alt='...')
+        .col-md-6
+          +InfoText({
+            title:'Dedicated to redefine<br> the cutting edge.',
+            details:'Bruce Wayne, eccentric billionaire. It was a dog. It was a big dog. Bats frighten me. Its time my enemies shared my dread. No guns, no killing. Its ends here. It was a dog. It was a big dog.',
+            text:' Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span>',
+            buttonText:'Read More'
+          })
+        

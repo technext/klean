@@ -23,20 +23,20 @@
 
 // // Gradient Button
 
- .gradient-button {
-  font-size: 20px;
+ .btn-gradient {
+  font-size: 16px;
   color: #FFF;
-  border-radius: 1rem;
+  font-weight: bold;
 }
 
-.gradient-button:hover{
+.btn-gradient:hover{
   box-shadow: 0 10px 20px $pink, 0 6px 6px $indigo;
 }
 
-.klean-btn {
+.btn-klean {
   background-image: linear-gradient(to right, $pink 0%, $indigo 100%);
   border-radius: 1rem;
 }
-.klean-btn-outline {
+.btn-klean-outline {
   border-image: linear-gradient(90deg, $pink, $indigo) 1 stretch; 
 }

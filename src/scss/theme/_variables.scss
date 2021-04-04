@@ -179,7 +179,7 @@ $enable-negative-margins: true !default;
 //|   Shadow
 //-----------------------------------------------*/
 
-$box-shadow: 0 .6375rem .975rem 0 #F4F8FE, 0 3px 6px 0 #F4F8FE !default;
+// $box-shadow: 0 .6375rem .975rem 0 #F4F8FE, 0 3px 6px 0 #F4F8FE !default;
 $box-shadow-sm: 0 1.5625rem 2.8125rem rgba(#0057FF, .15) !default;
 $box-shadow-lg: 0 1rem 4rem rgba($black, 0.175) !default;
 
@@ -320,7 +320,7 @@ $blockquote-font-size: $font-size-lg !default;
 $input-bg           :  tint-color($gray-300, 90) !default;
 $input-placeholder-color:     tint-color($gray-300, 10) !important;
 $input-btn-padding-y: .5rem !default;
-$input-btn-padding-x: 2.6rem !default;
+$input-btn-padding-x: 1.5rem !default;
 
 $input-btn-padding-y-sm: .10rem !default;
 $input-btn-padding-x-sm: 0.5rem !default;
@@ -346,7 +346,7 @@ $navbar-font-size: $font-size-base * 0.8 !default;
 
 $navbar-light-color: rgba($black, 0.95) !default;
 $navbar-light-hover-color: rgba($black, 0.95) !default;
-$navbar-light-active-color: $primary !default;
+$navbar-light-active-color: $gray-700 !default;
 $navbar-light-disabled-color: rgba($black, 0.25) !default;
 
 $navbar-dark-color: rgba($white, .7) !default;

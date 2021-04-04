@@ -13,3 +13,11 @@
 .border-bottom-2{ border-bottom-width: 0.125rem !important; }
 .border-start-2{ border-left-width: 0.125rem !important; }
 
+
+// Border cleanup
+
+.border-klean{
+  border-style: solid;
+  border-image: linear-gradient(to left, rgba(180, 210, 255, 0) 1%, rgb(199, 217, 245) 50%, rgba(180, 210, 255, 0) 100%)100% 0 100% 0/1px 0 1px 0 stretch;
+}
+

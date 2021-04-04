@@ -286,7 +286,7 @@ var navbarInit = function navbarInit() {
     var allColors = _objectSpread(_objectSpread({}, utils.colors), utils.grays);
 
     var name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
-    var colorName = Object.keys(allColors).includes(name) ? name : 'white';
+    var colorName = Object.keys(allColors).includes(name) ? name : 'light';
     var color = allColors[colorName];
     var bgClassName = "bg-".concat(colorName);
     var shadowName = 'shadow-transition';

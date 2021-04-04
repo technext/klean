@@ -10,12 +10,13 @@ mixin NavbarKlean
           li.nav-item.px-2(data-anchor)
             a.nav-link.fw-medium(aria-current='page', href='index.html' class= currentPage === 'index' ? 'active' : false ) Home
           li.nav-item.px-2(data-anchor)
-            a.nav-link(href='#events') Events
+            a.nav-link(href='#service') Service
           li.nav-item.px-2(data-anchor)
-            a.nav-link(href='#services') Our Services  
+            a.nav-link(href='#services') Works
           li.nav-item.px-2(data-anchor)
-            a.nav-link(href='#testimonial') Testimonial 
+            a.nav-link(href='#testimonial') News
           li.nav-item.px-2(data-anchor)
-            a.nav-link(href='#country') Country 
+            a.nav-link(href='#country') Contact
         form.ps-lg-5
-          button.btn.klean-btn-outline.order-0(type='submit') Apply
+          button.btn.btn-link.text-primary.fw-bold.order-1.order-lg-0(type='button') Sign in
+          button.btn.btn-light.shadow.text-gradient.fw-bold.order-0(type='submit') Sign Up
