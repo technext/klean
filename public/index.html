@@ -39,7 +39,7 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block navbar-klean" data-navbar-on-scroll="data-navbar-on-scroll">
         <div class="container"><a class="navbar-brand d-flex align-items-center fw-semi-bold fs-3" href="index.html"> <img class="me-3" src="assets/img/gallery/logo.png" alt="" /></a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
@@ -52,12 +52,12 @@
             </ul>
             <form class="ps-lg-5">
               <button class="btn btn-link text-primary fw-bold order-1 order-lg-0" type="button">Sign in</button>
-              <button class="btn btn-light shadow text-gradient fw-bold order-0" type="submit">Sign Up</button>
+              <button class="btn btn-light shadow-klean text-gradient fw-bold order-0" type="submit">Sign Up</button>
             </form>
           </div>
         </div>
       </nav>
-      <section class="py-0" id="home">
+      <section id="home">
         <div class="bg-holder d-none d-md-block" style="background-image:url(assets/img/illustrations/hero.png);background-position:right bottom;background-size:contain;">
         </div>
         <!--/.bg-holder-->
@@ -67,7 +67,7 @@
         <!--/.bg-holder-->
 
         <div class="container">
-          <div class="row align-items-center min-vh-md-50 mt-7">
+          <div class="row align-items-center">
             <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
               <h1 class="fw-bold display-4 fs-4 fs-lg-6 fs-xxl-7 text-gradient"> Bootstrap 5 theme</h1>
               <h1 class="text-700">crafted by <span class="fw-bold">ThemeWagon</span></h1>
@@ -84,11 +84,11 @@
 
         <div class="container">
           <div class="row align-items-center justify-content-xl-between py-5 border-klean">
-            <div class="col-6 col-md-4 col-xl-2 text-xl-start"><img class="mb-4 mb-xl-0" src="assets/img/gallery/google.png" height="40" alt="brands" /></div>
-            <div class="col-6 col-md-4 col-xl-2 text-xl-start"><img class="mb-4 mb-xl-0" src="assets/img/gallery/netflix.png" height="40" alt="brands" /></div>
-            <div class="col-6 col-md-4 col-xl-2 text-xl-start"><img class="mb-4 mb-xl-0" src="assets/img/gallery/microsoft.png" height="40" alt="brands" /></div>
-            <div class="col-6 col-md-4 col-xl-2 text-xl-start"><img class="mb-4 mb-xl-0" src="assets/img/gallery/theme-wagon.png" height="40" alt="brands" /></div>
-            <div class="col-6 col-md-4 col-xl-2 text-xl-start"><img class="mb-4 mb-xl-0" src="assets/img/gallery/mailbluster.png" height="40" alt="brands" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/google.png" height="40" alt="brands" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/netflix.png" height="40" alt="brands" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/microsoft.png" height="40" alt="brands" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/theme-wagon.png" height="40" alt="brands" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/mailbluster.png" height="40" alt="brands" /></div>
           </div>
         </div>
         <!-- end of .container-->
@@ -98,12 +98,7 @@
       <!-- ============================================-->
 
 
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
       <section class="py-0" id="services">
-
         <div class="container">
           <div class="row">
             <div class="col-lg-7 col-xxl-5 mx-auto text-center py-7">
@@ -111,6 +106,10 @@
               <p class="mb-0">Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span></p>
             </div>
           </div>
+          <div class="bg-holder" style="background-image:url(assets/img/illustrations/service-bg.png);background-position:center bottom;background-size:contain;">
+          </div>
+          <!--/.bg-holder-->
+
           <div class="row flex-center circle-blend circle-blend-right circle-warning">
             <div class="col-xl-9">
               <div class="row justify-content-center circle">
@@ -157,13 +156,7 @@
             </div>
           </div>
         </div>
-        <!-- end of .container-->
-
       </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-
 
 
       <!-- ============================================-->
@@ -179,37 +172,43 @@
           </div>
           <div class="row circle-blend circle-blend-right circle-cyan">
             <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/icons/mail.png" width="90" alt="..." />
+              <div class="text-center px-lg-3">
+                <div class="icon icon-danger"><span data-feather="mail"></span></div>
                 <h5 class="fw-bold">Encrypted Mail</h5>
                 <p class="mb-md-0 px-xxl-6">Bits of moving fluff encyclopaedia galactica are creatures</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/icons/screen.png" width="90" alt="..." />
+              <div class="text-center px-lg-3">
+                <div class="icon icon-danger"><span data-feather="mail"></span></div>
                 <h5 class="fw-bold">Screen Sharing</h5>
                 <p class="mb-md-0 px-xxl-6">Finite but unbounded quasar a mote of dust suspended</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/icons/log-book.png" width="90" alt="..." />
+              <div class="text-center px-lg-3">
+                <div class="icon icon-danger"><span data-feather="mail"></span></div>
                 <h5 class="fw-bold">Personal Logbook</h5>
                 <p class="mb-md-0 px-xxl-6">Paroxysm of global death kindling the energy hidden in matter</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/icons/app.png" width="90" alt="..." />
+              <div class="text-center px-lg-3">
+                <div class="icon icon-danger"><span data-feather="mail"></span></div>
                 <h5 class="fw-bold">App Support</h5>
                 <p class="mb-md-0 px-xxl-6">Extraordinary claims require extraordinary evidence emerged</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/icons/printing.png" width="90" alt="..." />
+              <div class="text-center px-lg-3">
+                <div class="icon icon-danger"><span data-feather="mail"></span></div>
                 <h5 class="fw-bold">Multiple Printing</h5>
                 <p class="mb-md-0 px-xxl-6">Kindling the energy hidden in matter stirred by starlight</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/icons/sketch.png" width="90" alt="..." />
+              <div class="text-center px-lg-3">
+                <div class="icon icon-danger"><span data-feather="mail"></span></div>
                 <h5 class="fw-bold">Free Sketch</h5>
                 <p class="mb-md-0 px-xxl-6">Hypatia brain is the seed of intelligence citizens of distant epochs dream</p>
               </div>
@@ -224,27 +223,39 @@
 
 
       <section class="circle-blend circle-blend-left circle-primary">
-        <div class="bg-holder" style="background-image:url(assets/img/illustrations/product-bg.png);background-position:center;background-size:cover;">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/product-bg-1.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder mt-n4" style="background-image:url(assets/img/illustrations/product-bg-2.png);background-position:left top;background-size:contain;">
         </div>
         <!--/.bg-holder-->
 
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6"><img class="img-fluid mb-3" src="assets/img/gallery/product-team.png" alt="..." /></div>
-            <div class="col-md-6">
+            <div class="col-auto">
+              <div class="card card-bg square shadow-square-bottom">
+                <div class="card-body"><img class="img-fluid" src="assets/img/gallery/product.png" alt="..." /></div>
+              </div>
+            </div>
+            <div class="col-md-6 ms-auto">
               <h1 class="fw-bold display-5 lh-sm my-4">A product team which <br> creates amazing UI/UX</h1>
               <p class="fs-1 mb-3 pe-xxl-8">I cant do that as Bruce Wayne... as a man.Im flesh and blood. I can be ignored, destroyed. But as a symbol, I can be incorruptible, I can be everlasting.</p>
               <p class="fs-1 mb-5 pe-xxl-8"> Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span></p>
-              <button class="btn btn-klean-outline order-0 text-gradient fs-1" type="submit">Read More</button>
+              <button class="btn btn-klean-outline order-0 text-gradient" type="submit">Read More</button>
             </div>
           </div>
-          <div class="row align-items-center pt-10">
-            <div class="col-md-6 order-md-1 text-center"><img class="img-fluid mb-3" src="assets/img/gallery/dedicated.png" alt="..." /></div>
+          <div class="row align-items-center pt-10 circle-blend circle-primary">
+            <div class="col-auto ms-auto order-md-1 text-center circle-blend circle-blend-right circle-danger">
+              <div class="card card-bg square shadow-square-top">
+                <div class="card-body"><img class="img-fluid" src="assets/img/gallery/dedicate.png" alt="..." /></div>
+              </div>
+            </div>
             <div class="col-md-6">
               <h1 class="fw-bold display-5 lh-sm my-4">Dedicated to redefine<br> the cutting edge.</h1>
               <p class="fs-1 mb-3 pe-xxl-8">Bruce Wayne, eccentric billionaire. It was a dog. It was a big dog. Bats frighten me. Its time my enemies shared my dread. No guns, no killing. Its ends here. It was a dog. It was a big dog.</p>
               <p class="fs-1 mb-5 pe-xxl-8"> Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span></p>
-              <button class="btn btn-klean-outline order-0 text-gradient fs-1" type="submit">Read More</button>
+              <button class="btn btn-klean-outline order-0 text-gradient" type="submit">Read More</button>
             </div>
           </div>
         </div>
@@ -253,7 +264,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section>
+      <section class="py-0">
 
         <div class="container">
           <div class="row justify-content-center mb-6">
@@ -273,6 +284,11 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-auto mx-auto mt-3">
+              <button class="btn btn-klean-outline order-0 text-gradient" type="submit">View More </button>
+            </div>
+          </div>
         </div>
         <!-- end of .container-->
 
@@ -285,33 +301,42 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section>
+      <section class="py-0" container container-lg-fluid container-xl="container container-lg-fluid container-xl">
 
-        <div class="container container-lg-fluid container-xl">
+        <div class="container">
           <div class="row justify-content-center mb-6 circle-blend circle-warning">
-            <div class="col-lg-6 text-center mx-auto mb-8">
+            <div class="col-lg-6 text-center mx-auto mb-7 mt-5">
               <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Our Team</h5>
               <p class="mb-0">Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span></p>
             </div>
             <div class="col-xxl-9">
               <div class="row flex-center g-0">
-                <div class="col-sm-6 col-lg-3 text-center"><img src="assets/img/gallery/john.png" width="200" alt="..." />
-                  <h5 class="fw-bold mt-3 mb-1">John Adams</h5>
+                <div class="col-sm-6 col-lg-3 text-center">
+                  <div class="square-rounded shadow-square-right"><img src="assets/img/gallery/john.png" width="200" alt="..." /></div>
+                  <h5 class="fw-bold mt-5 mb-1">John Adams</h5>
                   <p>Ceo</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center"><img src="assets/img/gallery/carrey.png" width="200" alt="..." />
-                  <h5 class="fw-bold mt-3 mb-1">University Admissions</h5>
+                <div class="col-sm-6 col-lg-3 text-center">
+                  <div class="square-rounded shadow-square-left"><img src="assets/img/gallery/carrey.png" width="200" alt="..." /></div>
+                  <h5 class="fw-bold mt-5 mb-1">University Admissions</h5>
                   <p>Senior Developer</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center"><img src="assets/img/gallery/ray.png" width="200" alt="..." />
-                  <h5 class="fw-bold mt-3 mb-1">Visa COnsultancy</h5>
+                <div class="col-sm-6 col-lg-3 text-center">
+                  <div class="square-rounded shadow-square-right"><img src="assets/img/gallery/ray.png" width="200" alt="..." /></div>
+                  <h5 class="fw-bold mt-5 mb-1">Visa COnsultancy</h5>
                   <p>Developer</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center"><img src="assets/img/gallery/austin.png" width="200" alt="..." />
-                  <h5 class="fw-bold mt-3 mb-1">Visa Consultancy</h5>
+                <div class="col-sm-6 col-lg-3 text-center">
+                  <div class="square-rounded shadow-square-left"><img src="assets/img/gallery/austin.png" width="200" alt="..." /></div>
+                  <h5 class="fw-bold mt-5 mb-1">Visa Consultancy</h5>
                   <p>Designer</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto mx-auto mt-3">
+              <button class="btn btn-klean-outline order-0 text-gradient" type="submit">View Full Team </button>
             </div>
           </div>
         </div>
@@ -335,14 +360,18 @@
               <p class="mb-0">Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span></p>
             </div>
           </div>
-          <div class="row flex-center h-100">
-            <div class="col-xl-9">
+          <div class="row flex-center h-100 circle-blend circle-blend-left circle-pink">
+            <div class="col-xl-11 circle-blend circle-blend-right circle-cyan">
               <div class="carousel slide" id="carouselTestimonials" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
                     <div class="row h-100 align-items-center">
-                      <div class="col-md-5"><img class="img-fluid" src="assets/img/gallery/testimonial-1.png" alt="testimonials" /></div>
-                      <div class="col-md-7 mb-4"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
+                      <div class="col-auto square-rounded shadow-square-left-bottom pb-6">
+                        <div class="card card-bg h-100" style="border-radius:5rem;">
+                          <div class="card-body h-100"><img class="img-fluid" src="assets/img/gallery/t.png" alt="testimonials" /></div>
+                        </div>
+                      </div>
+                      <div class="col-md-7 mb-4 ms-auto"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
                         <h5 class="fw-bold text-gradient fs-4 mt-4">Excellent !</h5>
                         <p class="mt-4">I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.</p>
                         <div class="my-4">
@@ -368,8 +397,12 @@
                   </div>
                   <div class="carousel-item" data-bs-interval="5000">
                     <div class="row h-100 align-items-center">
-                      <div class="col-md-5"><img class="img-fluid" src="assets/img/gallery/testimonial-1.png" alt="testimonials" /></div>
-                      <div class="col-md-7 mb-4"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
+                      <div class="col-auto square-rounded shadow-square-left-bottom pb-6">
+                        <div class="card card-bg h-100" style="border-radius:5rem;">
+                          <div class="card-body h-100"><img class="img-fluid" src="assets/img/gallery/t.png" alt="testimonials" /></div>
+                        </div>
+                      </div>
+                      <div class="col-md-7 mb-4 ms-auto"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
                         <h5 class="fw-bold text-gradient fs-4 mt-4">Excellent !</h5>
                         <p class="mt-4">I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.</p>
                         <div class="my-4">
@@ -395,8 +428,12 @@
                   </div>
                   <div class="carousel-item" data-bs-interval="3000">
                     <div class="row h-100 align-items-center">
-                      <div class="col-md-5"><img class="img-fluid" src="assets/img/gallery/testimonial-1.png" alt="testimonials" /></div>
-                      <div class="col-md-7 mb-4"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
+                      <div class="col-auto square-rounded shadow-square-left-bottom pb-6">
+                        <div class="card card-bg h-100" style="border-radius:5rem;">
+                          <div class="card-body h-100"><img class="img-fluid" src="assets/img/gallery/t.png" alt="testimonials" /></div>
+                        </div>
+                      </div>
+                      <div class="col-md-7 mb-4 ms-auto"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
                         <h5 class="fw-bold text-gradient fs-4 mt-4">Excellent !</h5>
                         <p class="mt-4">I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.</p>
                         <div class="my-4">
@@ -422,8 +459,12 @@
                   </div>
                   <div class="carousel-item">
                     <div class="row h-100 align-items-center">
-                      <div class="col-md-5"><img class="img-fluid" src="assets/img/gallery/testimonial-1.png" alt="testimonials" /></div>
-                      <div class="col-md-7 mb-4"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
+                      <div class="col-auto square-rounded shadow-square-left-bottom pb-6">
+                        <div class="card card-bg h-100" style="border-radius:5rem;">
+                          <div class="card-body h-100"><img class="img-fluid" src="assets/img/gallery/t.png" alt="testimonials" /></div>
+                        </div>
+                      </div>
+                      <div class="col-md-7 mb-4 ms-auto"><img class="img-fluid" src="assets/img/gallery/quotation.png" alt="testimonials-bg" />
                         <h5 class="fw-bold text-gradient fs-4 mt-4">Excellent !</h5>
                         <p class="mt-4">I am completely blown away. Thanks guys, keep up the good work! I just cant get enough of Deva App. I want to get a T-Shirt witheva App on it so I can show it off to everyone.</p>
                         <div class="my-4">
@@ -482,10 +523,10 @@
               <p class="mb-0">Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span></p>
             </div>
           </div>
-          <div class="row flex-center h-100">
+          <div class="row flex-center h-100 circle-blend circle-blend-left circle-cyan">
             <div class="col-12">
-              <div class="row align-items-center">
-                <div class="col-md-6 col-lg-4 mb-4">
+              <div class="row align-items-center circle-blend circle-blend-right circle-warning">
+                <div class="col-md-6 col-lg-4 mb-4 undefined">
                   <div class="card card-bg p-3 h-100">
                     <div class="card-body">
                       <h6 class="text-gradient fs--1 fw-bold">Article</h6>
@@ -509,7 +550,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 circle-blend circle-blend-left circle-pink">
                   <div class="card card-bg p-3 h-100">
                     <div class="card-body">
                       <h6 class="text-gradient fs--1 fw-bold">lifestyle</h6>
@@ -533,7 +574,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4 undefined">
                   <div class="card card-bg p-3 h-100">
                     <div class="card-body">
                       <h6 class="text-gradient fs--1 fw-bold">CEO/office</h6>
@@ -752,6 +793,11 @@
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="vendors/feather-icons/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
     <script src="assets/js/theme.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">

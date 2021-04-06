@@ -71,7 +71,7 @@ var colors = {
   info: '#27bcfd',
   warning: '#f5803e',
   danger: '#e63757',
-  light: '#f9fafd',
+  light: '#F9FAFD',
   dark: '#000'
 };
 var grays = {
@@ -296,21 +296,14 @@ var navbarInit = function navbarInit() {
         backgroundImage = _window$getComputedSt.backgroundImage;
 
     var transition = 'background-color 0.35s ease';
-    navbar.style.backgroundImage = 'none'; // Change navbar background color on scroll
+    navbar.style.backgroundImage = 'navbar-klean'; // Change navbar background color on scroll
 
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
-      var alpha = scrollTop / windowHeight * 0.15; // Add class on scroll
-
-      navbar.classList.add('backdrop');
-
-      if (alpha === 0) {
-        navbar.classList.remove('backdrop');
-      }
-
+      var alpha = scrollTop / windowHeight * 0.5;
       alpha >= 1 && (alpha = 1);
       navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
-      navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
+      navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'navbar-klean';
       alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? navbar.classList.add(shadowName) : navbar.classList.remove(shadowName);
     }); // Toggle bg class on window resize
 

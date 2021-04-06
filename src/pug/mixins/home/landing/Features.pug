@@ -31,12 +31,19 @@ append variables
         title:'Free Sketch',
         text:'Hypatia brain is the seed of intelligence citizens of distant epochs dream'
       },
-      ]
+    ]
+
+mixin FeatureIcon(config)
+  - var config = Object.assign({ icon: 'user', color: 'primary' }, config)
+  .icon(class=`icon-${config.color}`)
+    span(data-feather=config.icon)
 
 mixin Feature(config)
   .col-md-4.mb-6
     .text-center.px-lg-3
-      img.img-fluid.mb-3(src=`${CWD}assets/img/icons/${config.image}` width="90"  alt='...')
+      +FeatureIcon({icon: 'mail', color: 'danger'})
+      //- div
+        img.img-fluid.mb-3(src=`${CWD}assets/img/icons/${config.image}`   alt='...')
       h5.fw-bold=config.title
       p.mb-md-0.px-xxl-6=config.text
 

@@ -62,7 +62,7 @@ const colors = {
   info: "#27bcfd",
   warning: "#f5803e",
   danger: "#e63757",
-  light: "#f9fafd",
+  light: "#F9FAFD",
   dark: "#000",
 };
 

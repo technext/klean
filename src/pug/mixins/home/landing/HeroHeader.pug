@@ -1,9 +1,9 @@
 mixin HeroHeader
-  section.py-0#home
+  section#home
     +Background({ image: `${CWD}assets/img/illustrations/hero.png`, attrs: { style: { 'background-position': 'right bottom', 'background-size': 'contain',} }, className: 'd-none d-md-block' })
     +Background({image: `${CWD}assets/img/illustrations/heroheader-bg.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'contain',} }, className: '' })
     .container
-      .row.align-items-center.min-vh-md-50.mt-7
+      .row.align-items-center
         .col-md-7.col-lg-6.py-6.text-sm-start.text-center
           h1.fw-bold.display-4.fs-4.fs-lg-6.fs-xxl-7.text-gradient  Bootstrap 5 theme
           h1.text-700 crafted by 

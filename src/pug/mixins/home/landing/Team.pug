@@ -5,21 +5,25 @@ append variables
         image:'john.png',
         name  :'John Adams',
         designation:'Ceo',
+        class: 'square-rounded shadow-square-right',
       },
       {
         image:'carrey.png',
         name  :'University Admissions',
         designation:'Senior Developer',
+        class: 'square-rounded shadow-square-left',
       },
       {
         image:'ray.png',
         name  :'Visa COnsultancy',
         designation:'Developer',
+        class: 'square-rounded shadow-square-right',
       },
       {
         image:'austin.png',
         name  :'Visa Consultancy',
         designation:'Designer',
+        class: 'square-rounded shadow-square-left',
       },
       
     ];
@@ -27,14 +31,15 @@ append variables
 
 mixin TeamMember(config) 
   .col-sm-6.col-lg-3.text-center
-    img(src=`${CWD}assets/img/gallery/${config.image}` width='200' alt='...')
-    h5.fw-bold.mt-3.mb-1=config.name
+    div(class=`${config.class}`)
+      img(src=`${CWD}assets/img/gallery/${config.image}` width='200' alt='...')
+    h5.fw-bold.mt-5.mb-1=config.name
     p=config.designation
 
 mixin Team
-  +Section('container container-lg-fluid container-xl')
+  +Section.py-0('container container-lg-fluid container-xl')
     .row.justify-content-center.mb-6.circle-blend.circle-warning
-      .col-lg-6.text-center.mx-auto.mb-8
+      .col-lg-6.text-center.mx-auto.mb-7.mt-5
         h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Our Team
         p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
           span.fw-bold ThemeWagon
@@ -42,3 +47,6 @@ mixin Team
         .row.flex-center.g-0
           each item in teams
             +TeamMember(item)
+    .row  
+      .col-auto.mx-auto.mt-3
+        button.btn.btn-klean-outline.order-0.text-gradient(type='submit') View Full Team        
