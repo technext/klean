@@ -35,7 +35,7 @@ append variables
 
 
 mixin Testimonial(config)
-  .col-auto.square-rounded.shadow-square-left-bottom.pb-6
+  .col-auto.square-rounded.shadow-square-left-bottom
     .card.card-bg.h-100(style="border-radius:5rem;")
       .card-body.h-100
         img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}` alt="testimonials")
@@ -60,34 +60,36 @@ mixin Testimonial(config)
       
 
 mixin Testimonials
-  +Section#testimonial
-    .row
-      .col-lg-7.mx-auto.text-center.mb-9
-        h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 What our clients have to say
-        p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
-          span.fw-bold ThemeWagon
-    .row.flex-center.h-100.circle-blend.circle-blend-left.circle-pink
-      .col-xl-11.circle-blend.circle-blend-right.circle-cyan
-        #carouselTestimonials.carousel.slide(data-bs-ride='carousel')
-          .carousel-inner
-            .carousel-item.active(data-bs-interval='10000')
-              .row.h-100.align-items-center                
-                +Testimonial(testimonials[0])                                                                    
-            .carousel-item(data-bs-interval='5000')
-              .row.h-100.align-items-center                
-                +Testimonial(testimonials[1])                    
-            .carousel-item(data-bs-interval='3000')
-              .row.h-100.align-items-center                                  
-                +Testimonial(testimonials[2])                      
-            .carousel-item
-              .row.h-100.align-items-center          
-                +Testimonial(testimonials[3])
-                                              
-          .row.mt-1.flex-center
-            .col-auto.position-relative.z-index-2
-              ol.carousel-indicators.me-xxl-6.me-xl-4.me-lg-5
-                li.active(data-bs-target='#carouselTestimonials' data-bs-slide-to='0')
-                li(data-bs-target='#carouselTestimonials' data-bs-slide-to='1')
-                li(data-bs-target='#carouselTestimonials' data-bs-slide-to='2')
-                li(data-bs-target='#carouselTestimonials' data-bs-slide-to='3')
+  section.py-5#testimonial
+    +Background({image: `${CWD}assets/img/illustrations/testimonial-bg-1.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover',} }, className: '' })
+    +Background({image: `${CWD}assets/img/illustrations/testimonial-bg.png`, attrs: { style: { 'background-position': 'right top', 'background-size': 'auto','margin-top':'-43px','margin-left':'-200px'} }, className: '' })
+    .container-lg
+      .row
+        .col-lg-7.mx-auto.text-center.mb-6
+          h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 What our clients have to say
+          p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
+            span.fw-bold ThemeWagon
+      .row.flex-center.h-100.circle-blend.circle-blend-left.circle-pink(style="z-index:1;")
+        .col-xl-11.circle-blend.circle-blend-right.circle-cyan
+          #carouselTestimonials.carousel.slide(data-bs-ride='carousel')
+            .carousel-inner.p-5
+              .carousel-item.active(data-bs-interval='10000')
+                .row.h-100.align-items-center                
+                  +Testimonial(testimonials[0])                                                                    
+              .carousel-item(data-bs-interval='5000')
+                .row.h-100.align-items-center                
+                  +Testimonial(testimonials[1])                    
+              .carousel-item(data-bs-interval='3000')
+                .row.h-100.align-items-center                                  
+                  +Testimonial(testimonials[2])                      
+              .carousel-item
+                .row.h-100.align-items-center          
+                  +Testimonial(testimonials[3])                                   
+            .row.flex-center
+              .col-auto.position-relative.z-index-2
+                ol.carousel-indicators.me-xxl-7.me-xl-4.me-lg-7
+                  li.active(data-bs-target='#carouselTestimonials' data-bs-slide-to='0')
+                  li(data-bs-target='#carouselTestimonials' data-bs-slide-to='1')
+                  li(data-bs-target='#carouselTestimonials' data-bs-slide-to='2')
+                  li(data-bs-target='#carouselTestimonials' data-bs-slide-to='3')
 

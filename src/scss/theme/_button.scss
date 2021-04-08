@@ -30,13 +30,14 @@
 }
 
 .btn-gradient:hover{
-  box-shadow: 0 10px 20px $pink, 0 6px 6px $indigo;
+  box-shadow: 0 10px 20px $pink, 0 6px 6px $primary;
 }
 
 .btn-klean {
-  background-image: linear-gradient(to right, $pink 0%, $indigo 100%);
-  border-radius: 1rem;
+  background-image: linear-gradient(50deg, rgba(195,129,219,1), rgba(78,146,249,1));
 }
+
 .btn-klean-outline {
-  border-image: linear-gradient(90deg, $pink, $indigo) 1 stretch; 
+  border-image: linear-gradient(50deg, $pink, $primary) 1 stretch; 
+
 }

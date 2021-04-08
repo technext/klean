@@ -37,7 +37,8 @@ mixin TeamMember(config)
     p=config.designation
 
 mixin Team
-  +Section.py-0('container container-lg-fluid container-xl')
+  +Section('container container-lg-fluid container-xl').py-0
+    +Background({image: `${CWD}assets/img/illustrations/team-bg.png`, attrs: { style: { 'background-position': 'left top', 'background-size': 'auto',} }, className: '' })
     .row.justify-content-center.mb-6.circle-blend.circle-warning
       .col-lg-6.text-center.mx-auto.mb-7.mt-5
         h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Our Team
@@ -48,5 +49,5 @@ mixin Team
           each item in teams
             +TeamMember(item)
     .row  
-      .col-auto.mx-auto.mt-3
+      .col-auto.mx-auto.mb-8
         button.btn.btn-klean-outline.order-0.text-gradient(type='submit') View Full Team        

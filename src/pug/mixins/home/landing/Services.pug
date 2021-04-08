@@ -32,16 +32,15 @@ mixin Service(config)
               path(fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z')
 
 mixin Services
-  section#services.py-0
-    .container
-      .row
-        .col-lg-7.col-xxl-5.mx-auto.text-center.py-7
-          h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Service
-          p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
-            span.fw-bold ThemeWagon
-      +Background({image: `${CWD}assets/img/illustrations/service-bg.png`, attrs: { style: { 'background-position': 'center bottom', 'background-size': 'contain',} }, className: '' })
-      .row.flex-center.circle-blend.circle-blend-right.circle-warning
-        .col-xl-9
-          .row.justify-content-center.circle
-            each Service in services
-              +Service(Service)
+  +Section#services.py-0
+    .row
+      .col-lg-7.col-xxl-5.mx-auto.text-center.py-7
+        h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Service
+        p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
+          span.fw-bold ThemeWagon
+    +Background({image: `${CWD}assets/img/illustrations/service.png`, attrs: { style: { 'background-position': 'bottom center', 'background-size': 'contain',} }, className: '' })
+    .row.flex-center.circle-blend.circle-blend-right.circle-warning
+      .col-xl-9
+        .row.justify-content-center.circle
+          each Service in services
+            +Service(Service)

@@ -160,8 +160,8 @@
 
 
 .icon {
-  padding: map_get($spacers, 4);
-  border-radius: 20px;
+  padding: map_get($spacers, 3);
+  border-radius: 15px;
   display: inline-flex;
   background-color: rgba($white, 0.2);
   backdrop-filter: blur(10px);
@@ -170,8 +170,6 @@
   @each $color, $value in $theme-colors {
     &-#{$color} {
       color: $value;
-      // background-image: linear-gradient(135deg, rgba($white, 0.5), rgba($value, 0.9));
-      // transform: translate3d(26%, 8%, 0);
     }
   }
 }

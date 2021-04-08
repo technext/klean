@@ -2,53 +2,61 @@ append variables
  -
     var features = [
       {
-        image:'mail.png',
+        icon:'mail',
+        color:'danger',
         title:'Encrypted Mail',
+        iconWrapper:'icon-wrapper shadow-danger',
         text:'Bits of moving fluff encyclopaedia galactica are creatures'
       },
       {
-        image:'screen.png', 
+        icon:'monitor',
+        color:'primary',
+        iconWrapper:'icon-wrapper shadow-primary',
         title:'Screen Sharing',
         text:'Finite but unbounded quasar a mote of dust suspended'
       },
       {
-        image:'log-book.png',
+        icon:'book',
+        color:'warning',
+        iconWrapper:'icon-wrapper shadow-warning',
         title:'Personal Logbook',
         text:'Paroxysm of global death kindling the energy hidden in matter'
       },
        {
-        image:'app.png',
+        icon:'tablet',
+        color:'success',
+        iconWrapper:'icon-wrapper shadow-success',
         title:'App Support',
         text:'Extraordinary claims require extraordinary evidence emerged'
       },
        {
-        image:'printing.png',
+        icon:'printer',
+        color:'secondary',
+        iconWrapper:'icon-wrapper shadow-secondary',
         title:'Multiple Printing',
         text:'Kindling the energy hidden in matter stirred by starlight'
       },
        {
-        image:'sketch.png',
+        icon:'edit-2',
+        color:'info',
+        iconWrapper:'icon-wrapper shadow-info',
         title:'Free Sketch',
         text:'Hypatia brain is the seed of intelligence citizens of distant epochs dream'
       },
     ]
 
-mixin FeatureIcon(config)
-  - var config = Object.assign({ icon: 'user', color: 'primary' }, config)
-  .icon(class=`icon-${config.color}`)
-    span(data-feather=config.icon)
-
 mixin Feature(config)
   .col-md-4.mb-6
     .text-center.px-lg-3
-      +FeatureIcon({icon: 'mail', color: 'danger'})
-      //- div
-        img.img-fluid.mb-3(src=`${CWD}assets/img/icons/${config.image}`   alt='...')
-      h5.fw-bold=config.title
+      div(class=`${config.iconWrapper}`)
+        .icon(class=`icon-${config.color}`)
+          span(data-feather=config.icon)
+      h5.mt-3.fw-bold=config.title
       p.mb-md-0.px-xxl-6=config.text
 
 mixin Features
   +Section
+    +Background({image: `${CWD}assets/img/illustrations/feature-bg.png`, attrs: { style: { 'background-position': 'right', 'background-size': 'auto',} }, className: '' })
     .row.justify-content-center.mb-6
       .col-lg-6.text-center.mx-auto.mb-3.mb-md-5.mt-4
         h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Features

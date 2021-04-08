@@ -78,14 +78,14 @@ $grays: map-merge(
 //|   Solid Colors
 //-----------------------------------------------*/
 $blue: #4E92F9 !default;
-$indigo: #4E92F9 !default;
+$indigo: #8845FF !default;
 $purple: #C46DE3 !default;
-$pink: #C381DB !default;
+$pink: #EE6BFA !default;
 $red: #EB6453 !default;
-$orange: #ff8125 !default;
+$orange: #F0980E !default;
 $yellow: #EFAB18 !default;
 $green: #96D121 !default;
-$teal: #00a598 !default;
+$teal: #18DEBC !default;
 $cyan: #21D4DF !default;
 $light: #F9FAFD !default;
 
@@ -429,7 +429,7 @@ $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
 $carousel-control-color:             $gray-1000 !default;
 
-$carousel-indicator-active-bg:       $indigo !default;
+$carousel-indicator-active-bg:       $primary !default;
 $carousel-indicator-width:           17px !default;
 $carousel-indicator-height:          9px !default;
 $carousel-indicator-hit-area-height : 0 !default;
