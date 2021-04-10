@@ -5,22 +5,22 @@ mixin ProductTeam
     .container
       .row.align-items-center
         .col-auto
-          .card.card-bg.square.shadow-square-bottom
-            .card-body
-              img.img-fluid(src=`${CWD}assets/img/gallery/product.png`   alt='...')
-        .col-md-6.ms-auto
+          .card.product-card-bg.square.shadow-square-bottom
+            .card-body.p-4
+              img.img-fluid.border-img(src=`${CWD}assets/img/gallery/product.png`   alt='...')
+        .col-lg-6.ms-xl-auto
           +InfoText({
             title:'A product team which <br> creates amazing UI/UX',
             details:'I cant do that as Bruce Wayne... as a man.Im flesh and blood. I can be ignored, destroyed. But as a symbol, I can be incorruptible, I can be everlasting.',
             text:' Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span>',
             buttonText:'Read More'
           })
-      .row.align-items-center.pt-10.circle-blend.circle-primary
-        .col-auto.ms-auto.order-md-1.text-center.circle-blend.circle-blend-right.circle-danger
-          .card.card-bg.square.shadow-square-top
-            .card-body
-              img.img-fluid(src=`${CWD}assets/img/gallery/dedicate.png`  alt='...')
-        .col-md-6
+      .row.align-items-center.pt-10.pt-md-6.pt-lg-10.circle-blend.circle-primary
+        .col-auto.ms-xl-auto.order-md-1.text-center.circle-blend.circle-blend-right.circle-danger
+          .card.product-card-bg.square.shadow-square-top
+            .card-body.p-4
+              img.img-fluid.border-img(src=`${CWD}assets/img/gallery/dedicate.png`  alt='...')
+        .col-lg-6
           +InfoText({
             title:'Dedicated to redefine<br> the cutting edge.',
             details:'Bruce Wayne, eccentric billionaire. It was a dog. It was a big dog. Bats frighten me. Its time my enemies shared my dread. No guns, no killing. Its ends here. It was a dog. It was a big dog.',

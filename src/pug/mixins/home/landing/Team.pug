@@ -5,25 +5,29 @@ append variables
         image:'john.png',
         name  :'John Adams',
         designation:'Ceo',
-        class: 'square-rounded shadow-square-right',
+        shadowClass: 'square-rounded shadow-square-right',
+        teamBg:'team-card-1',
       },
       {
         image:'carrey.png',
-        name  :'University Admissions',
+        name  :'Carrey Johnson',
         designation:'Senior Developer',
-        class: 'square-rounded shadow-square-left',
+        shadowClass: 'square-rounded shadow-square-left',
+        teamBg:'team-card-2',
       },
       {
         image:'ray.png',
-        name  :'Visa COnsultancy',
+        name  :'Ray Marie',
         designation:'Developer',
-        class: 'square-rounded shadow-square-right',
+        shadowClass: 'square-rounded shadow-square-right',
+        teamBg:'team-card-3',
       },
       {
         image:'austin.png',
-        name  :'Visa Consultancy',
+        name  :'Austin Min',
         designation:'Designer',
-        class: 'square-rounded shadow-square-left',
+        shadowClass: 'square-rounded shadow-square-left',
+        teamBg:'team-card-4',
       },
       
     ];
@@ -31,9 +35,9 @@ append variables
 
 mixin TeamMember(config) 
   .col-sm-6.col-lg-3.text-center
-    div(class=`${config.class}`)
-      img(src=`${CWD}assets/img/gallery/${config.image}` width='200' alt='...')
-    h5.fw-bold.mt-5.mb-1=config.name
+    div(class=`${config.shadowClass}`)
+      img(src=`${CWD}assets/img/gallery/${config.image}` width='200' alt='...' class=`${config.teamBg}`)
+    h5.fw-bold.mt-3.mb-1=config.name
     p=config.designation
 
 mixin Team

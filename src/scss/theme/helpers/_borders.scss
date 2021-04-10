@@ -21,3 +21,15 @@
   border-image: linear-gradient(to left, rgba(180, 210, 255, 0) 1%, rgb(199, 217, 245) 50%, rgba(180, 210, 255, 0) 100%)100% 0 100% 0/1px 0 1px 0 stretch;
 }
 
+
+.border-img{
+  border: 2px solid $white;
+  border-radius: 4rem;
+}
+
+.border-gradient-img{
+  // border-style: solid;
+  border: 5px solid $white;
+  border-radius: 5rem;
+  // border-image: linear-gradient(rgb(0,143,104), rgb(250,224,66));
+}
