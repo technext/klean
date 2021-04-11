@@ -17619,12 +17619,17 @@ ul {
 
 .border-img {
   border: 2px solid #fff;
-  border-radius: 4rem;
+  border-radius: 5rem;
 }
 
-.border-gradient-img {
-  border: 5px solid #fff;
-  border-radius: 5rem;
+.border-klean-gradient {
+  border: double .5rem transparent;
+  border-radius: 80px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#c381db), to(#4e92f9));
+  background-image: -o-linear-gradient(white, white), -o-linear-gradient(left, #c381db, #4e92f9);
+  background-image: linear-gradient(white, white), linear-gradient(to right, #c381db, #4e92f9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -17929,10 +17934,10 @@ ul {
     background-image: linear-gradient(200deg, rgba(225, 160, 247, 0), rgba(225, 160, 247, 0.377));
   }
   .shadow-square-left-bottom::before {
-    height: 21.875rem;
-    width: 21.875rem;
-    top: 3.125rem;
-    right: 3.75rem;
+    height: 100%;
+    width: 100%;
+    top: 16%;
+    right: 12%;
     border-radius: 5rem 5rem 5rem 8.75rem;
     background-image: -o-linear-gradient(250deg, rgba(78, 146, 249, 0.034), rgba(78, 146, 249, 0.642));
     background-image: linear-gradient(200deg, rgba(78, 146, 249, 0.034), rgba(78, 146, 249, 0.642));
@@ -18355,10 +18360,10 @@ ul {
   bottom: 0;
   background-image: inherit;
   background-size: auto;
-  background: -o-linear-gradient(40deg, #c381db, #4e92f9);
-  background: linear-gradient(50deg, #c381db, #4e92f9);
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="3" width="100%" height="100%" style="height:calc(100% - 6px);width:calc(100% - 6px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0/100% 100%;
-  mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="3" width="100%" height="100%" style="height:calc(100% - 6px);width:calc(100% - 6px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0/100% 100%;
+  background: -o-linear-gradient(40deg, #EE6BFA, #4E92F9);
+  background: linear-gradient(50deg, #EE6BFA, #4E92F9);
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="1" width="100%" height="100%" style="height:calc(100% - 2px);width:calc(100% - 2px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0/100% 100%;
+  mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="1" width="100%" height="100%" style="height:calc(100% - 2px);width:calc(100% - 2px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0/100% 100%;
 }
 
 /* Hover */
@@ -18539,7 +18544,7 @@ ul {
   -webkit-backdrop-filter: blur(1.875rem);
   backdrop-filter: blur(1.875rem);
   border: 0.125rem solid #fff;
-  border-radius: 80px;
+  border-radius: 120px;
 }
 
 .team-card {
