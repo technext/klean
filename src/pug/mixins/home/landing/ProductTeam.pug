@@ -2,25 +2,25 @@ mixin ProductTeam
   section.circle-blend.circle-blend-left.circle-primary
     +Background({image: `${CWD}assets/img/illustrations/product-bg-1.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover',} }, className: '' })
     +Background({image: `${CWD}assets/img/illustrations/product-bg-2.png`, attrs: { style: { 'background-position': 'left top', 'background-size': 'contain',} }, className: 'mt-n4' })
-    .container
-      .row.align-items-center
+    .container-xl
+      .row.flex-center
         .col-auto
           .card.product-card-bg.square.shadow-square-bottom
             .card-body.p-4
               img.img-fluid.border-img(src=`${CWD}assets/img/gallery/product.png`   alt='...')
-        .col-lg-6.ms-xl-auto
+        .col-lg-6.ms-xl-auto.ms-lg-4.my-7.my-lg-0.px-sm-8.px-lg-0
           +InfoText({
             title:'A product team which <br> creates amazing UI/UX',
             details:'I cant do that as Bruce Wayne... as a man.Im flesh and blood. I can be ignored, destroyed. But as a symbol, I can be incorruptible, I can be everlasting.',
             text:' Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span>',
             buttonText:'Read More'
           })
-      .row.align-items-center.pt-10.pt-md-6.pt-lg-10.circle-blend.circle-primary
+      .row.flex-center.pt-10.pt-md-6.pt-lg-10.circle-blend.circle-primary
         .col-auto.ms-xl-auto.order-md-1.text-center.circle-blend.circle-blend-right.circle-danger
           .card.product-card-bg.square.shadow-square-top
             .card-body.p-4
               img.img-fluid.border-img(src=`${CWD}assets/img/gallery/dedicate.png`  alt='...')
-        .col-lg-6
+        .col-lg-6.order-1.order-lg-0.ms-xl-auto.ms-lg-4.my-7.my-lg-0.px-sm-8.px-lg-0
           +InfoText({
             title:'Dedicated to redefine<br> the cutting edge.',
             details:'Bruce Wayne, eccentric billionaire. It was a dog. It was a big dog. Bats frighten me. Its time my enemies shared my dread. No guns, no killing. Its ends here. It was a dog. It was a big dog.',
