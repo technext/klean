@@ -37,8 +37,7 @@
   background-image: linear-gradient(50deg, rgba(195,129,219,1), rgba(78,146,249,1));
 }
 
-.btn-klean-outline {
-  // border-image: linear-gradient(50deg, $pink, $primary) 1 stretch; 
+.btn-klean-outline { 
   position: relative;
 
 &::before{
@@ -51,7 +50,7 @@
     bottom: 0;
     background-image:inherit;
     background-size:auto;
-    background: linear-gradient(50deg, #c381db, #4e92f9);
-    mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="3" width="100%" height="100%" style="height:calc(100% - 6px);width:calc(100% - 6px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0 / 100% 100%;
+    background: linear-gradient(50deg, $pink, $primary);
+    mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="1" width="100%" height="100%" style="height:calc(100% - 2px);width:calc(100% - 2px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0 / 100% 100%;
 }
 }

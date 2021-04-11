@@ -24,12 +24,13 @@
 
 .border-img{
   border: 2px solid $white;
-  border-radius: 4rem;
+  border-radius: 5rem;
 }
 
-.border-gradient-img{
-  // border-style: solid;
-  border: 5px solid $white;
-  border-radius: 5rem;
-  // border-image: linear-gradient(rgb(0,143,104), rgb(250,224,66));
+.border-klean-gradient{
+  border: double .5rem transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white),linear-gradient(to right,rgba(195,129,219,1),rgba(78,146,249,1));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }

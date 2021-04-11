@@ -2,4 +2,5 @@ mixin InfoText({title,details,text,buttonText})
     h1.fw-bold.display-5.lh-sm.my-4!= title
     p.fs-1.mb-3.pe-xxl-8!=details
     p.fs-1.mb-5.pe-xxl-8!=text
-    button.btn.btn-klean-outline.order-0.text-gradient(type='submit')!=buttonText
+    button.btn.btn-lg.btn-klean-outline.order-0(type='submit')
+        span.text-gradient.fw-bold!=buttonText 

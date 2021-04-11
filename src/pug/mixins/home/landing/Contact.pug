@@ -33,9 +33,8 @@ mixin Contact
                       path(d='M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z')
                 .row 
                   .col-sm-12  
-                    .d-grid
-                      a.btn.btn-light.hover-top.btn-glow.gradient-button.klean-btn.rounded-pill( type="submit")
-                        | Submit  
+                    .d-grid 
+                      button.btn.hover-top.btn-glow.btn-gradient.btn-klean.rounded-pill(type="submit") Submit 
         .col-lg-5.offset-lg-1
           .d-flex.align-items-center.mb-5
             .icon.icon-primary
@@ -59,18 +58,3 @@ mixin Contact
                 |St laurence, Virginia, 
                 br  
                 |Texas
-        
-          //- .d-flex.align-items-center
-            
-          //-   h5 Email 
-          //- p.ms-4 something@email.com  
-
-          //- .d-flex.align-items-center
-          //-   svg.bi.bi-telephone-fill.me-3(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#4E92F9' viewBox='0 0 16 16')
-          //-     path(fill-rule='evenodd' d='M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z')
-          //-   h5 Location
-          //- p.ms-4 43/A Spooner Street,
-          //-   br
-          //-   |St laurence, Virginia, 
-          //-   br  
-          //-   |Texas
