@@ -107,7 +107,7 @@
 }
 
 @include media-breakpoint-up(sm){
-  .square-rounded {
+  .wrapper{
     position: relative;
     display: inline-block;
     &::before {

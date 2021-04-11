@@ -67,3 +67,14 @@
 .bg-primary-gradient{
   background: linear-gradient(208.18deg, #51B4F7 9.05%, #5A98F2 76.74%);
 }
+//Hero section
+
+.bg-size{
+  background-size: cover;
+}
+@include media-breakpoint-up(xl){
+  .bg-size{
+    background-size: contain;
+  }
+
+}

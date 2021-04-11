@@ -17563,6 +17563,16 @@ ul {
   background: linear-gradient(-208.18deg, #51B4F7 9.05%, #5A98F2 76.74%);
 }
 
+.bg-size {
+  background-size: cover;
+}
+
+@media (min-width: 1200px) {
+  .bg-size {
+    background-size: contain;
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   Borders                                  */
 /* -------------------------------------------------------------------------- */
@@ -17883,11 +17893,11 @@ ul {
 }
 
 @media (min-width: 576px) {
-  .square-rounded {
+  .wrapper {
     position: relative;
     display: inline-block;
   }
-  .square-rounded::before {
+  .wrapper::before {
     position: absolute;
     content: '';
     z-index: -1 !important;
@@ -18505,15 +18515,15 @@ ul {
   -webkit-backdrop-filter: blur(1.875rem);
   backdrop-filter: blur(1.875rem);
   border: 0.125rem solid #fff;
-  border-radius: 86px;
+  border-radius: 5.375rem;
 }
 
 .project-card-bg {
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0.625rem);
+  backdrop-filter: blur(0.625rem);
   border: 0.125rem solid #fff;
-  border-radius: 27px;
+  border-radius: 1.6875rem;
 }
 
 .testimonial-card-bg {
@@ -18521,7 +18531,7 @@ ul {
   -webkit-backdrop-filter: blur(1.875rem);
   backdrop-filter: blur(1.875rem);
   border: 0.125rem solid #fff;
-  border-radius: 120px;
+  border-radius: 7.5rem;
 }
 
 .team-card {
@@ -18529,7 +18539,7 @@ ul {
 }
 
 .team-card-1 {
-  border-radius: 2.5rem 24px 4.375rem 24px;
+  border-radius: 2.5rem 1.5rem 4.375rem 1.5rem;
   border: 0.125rem solid rgba(255, 255, 255, 0.9);
 }
 
