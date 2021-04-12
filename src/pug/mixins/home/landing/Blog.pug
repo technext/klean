@@ -60,12 +60,12 @@ mixin BlogCard(config)
           span=config.views
 
 mixin Blog
-  +Section('container container-md-fluid')#blog.py-0
+  +Section('container container-md-fluid')#blog.py-5
     +Background({image: `${CWD}assets/img/illustrations/blog-bg.png`, attrs: { style: { 'background-position': 'left top', 'background-size': 'auto','margin-top':'-23px'} }, className: '' })
     +Background({image: `${CWD}assets/img/illustrations/blog-bg-1.png`, attrs: { style: { 'background-position': 'right bottom', 'background-size': 'auto','margin-top':'-66px',
     } }, className: '' })
     .row
-      .col-lg-7.col-xxl-5.mx-auto.text-center.my-7
+      .col-lg-7.col-xxl-5.mx-auto.text-center.mb-6
         h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Blog post
         p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
           span.fw-bold ThemeWagon

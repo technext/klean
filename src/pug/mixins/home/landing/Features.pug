@@ -55,7 +55,7 @@ mixin Feature(config)
       p.mb-md-0.px-xxl-6=config.text
 
 mixin Features
-  +Section#feature
+  +Section.py-5#feature
     +Background({image: `${CWD}assets/img/illustrations/feature-bg.png`, attrs: { style: { 'background-position': 'right', 'background-size': 'auto',} }, className: '' })
     .row.justify-content-center.mb-6
       .col-lg-6.text-center.mx-auto.mb-3.mb-md-5.mt-4

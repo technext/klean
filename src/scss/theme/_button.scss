@@ -23,17 +23,19 @@
 
 // // Gradient Button
 
- .btn-gradient {
-  font-size: 16px;
-  color: #FFF;
-  font-weight: bold;
-}
+//  .btn-gradient {
+//   font-size: 16px;
+//   color: #FFF;
+//   font-weight: bold;
+// }
 
 .btn-gradient:hover{
   box-shadow: 0 10px 20px $pink, 0 6px 6px $primary;
 }
 
 .btn-klean {
+  color: #FFF;
+  font-weight: bold;
   background-image: linear-gradient(50deg, rgba(195,129,219,1), rgba(78,146,249,1));
 }
 
