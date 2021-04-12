@@ -6996,8 +6996,8 @@ fieldset:disabled .btn {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 17px;
-  height: 9px;
+  width: 14px;
+  height: 8px;
   padding: 0;
   margin-left: 3px;
   margin-right: 3px;
@@ -18480,7 +18480,7 @@ ul {
 
 .carousel-indicators .active {
   opacity: 1;
-  width: 17px;
+  width: 14px;
   border-radius: 10px;
 }
 
