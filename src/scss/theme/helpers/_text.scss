@@ -46,9 +46,7 @@
 
 .text-gradient{
   // font-size: 16px;
-  background: linear-gradient(50deg, rgba(254,154,82,1),rgba(255,87,72,1));
+  background: linear-gradient(50deg, rgba(195,129,219,1),rgba(78,146,249,1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: $font-weight-bold;
-  color: $warning;
 }

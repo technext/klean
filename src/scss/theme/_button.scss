@@ -33,13 +33,13 @@
   box-shadow: 0 10px 20px $pink, 0 6px 6px $primary;
 }
 
-.btn-collab {
+.btn-klean {
   color: #FFF;
   font-weight: bold;
-  background-image: linear-gradient(50deg, rgba(254,154,82,1), rgba(255,87,72,1));
+  background-image: linear-gradient(50deg, rgba(195,129,219,1), rgba(78,146,249,1));
 }
 
-.btn-collab-outline { 
+.btn-klean-outline { 
   position: relative;
 
 &::before{
@@ -52,7 +52,7 @@
     bottom: 0;
     background-image:inherit;
     background-size:auto;
-    background: linear-gradient(50deg, $danger, $warning);
+    background: linear-gradient(50deg, $pink, $primary);
     mask: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg" ><rect x="1" y="1" width="100%" height="100%" style="height:calc(100% - 2px);width:calc(100% - 2px)" rx="6" ry="6" stroke-width="1" fill="transparent" stroke="white"/></svg>') 0 / 100% 100%;
 }
 }

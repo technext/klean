@@ -4,11 +4,11 @@
     "dest": "bootstrap"
   },  
  
-  "@fortawesome/fontawesome-free": {
-    "src": "js/all.min.js",
-    "dest": "fontawesome"
+  "feather-icons": {
+    "src": "dist/feather.min.js",
+    "dest": "feather-icons"
   },
-  
+
   "@popperjs": {
     "src": "core/dist/umd/popper.min.js",
     "dest": "@popperjs"
