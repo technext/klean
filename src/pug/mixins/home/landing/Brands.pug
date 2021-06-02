@@ -1,0 +1,12 @@
+
+mixin Brand(image)
+  .col-sm-6.col-lg&attributes(attributes)
+    img(src=`${CWD}assets/img/gallery/${image}`  alt='brands')
+mixin Brands
+  +Section.py-7.bg-soft-warning
+    .row
+      +Brand('netflix.png').mb-4.mb-lg-0.d-flex.align-items-center.justify-content-between             
+      +Brand('facebook.png').mb-4.mb-lg-0.d-flex.align-items-center.justify-content-between               
+      +Brand('freelancer.png').mb-4.mb-lg-0.d-flex.align-items-center.justify-content-between                                 
+      +Brand('mailbluster.png').mb-4.mb-lg-0.d-flex.align-items-center.justify-content-between                
+      +Brand('theme-wagon.png').mb-4.mb-lg-0.d-flex.align-items-center.justify-content-between               

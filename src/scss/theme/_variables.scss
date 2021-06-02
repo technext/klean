@@ -39,18 +39,18 @@ $grid-gutter-width: 2rem !default;
 //-----------------------------------------------*/
 
 $white: #fff !default;
-$gray-100: #B4D2FF  !default;
-$gray-200: #A2BDE5 !default;
-$gray-300: #90A8CC !default;
-$gray-400: #7E92B2 !default;
-$gray-500: #6C7E99 !default;
-$gray-600:  #5A6980 !default;
-$gray-700:  #485466 !default;
-$gray-800: #363F4D !default;
-$gray-900: #242A33 !default;
-$gray-1000: #12151A !default;
-$gray-1100: #000000 !default;
-$gray-1200: #242A33 !default;
+$gray-100: #F2F8FF  !default;
+$gray-200: #E1E6ED !default;
+$gray-300: #CED3D9 !default;
+$gray-400: #BDC1C7 !default;
+$gray-500: #B3B7BD !default;
+$gray-600:  #9DA1A6 !default;
+$gray-700:  #85888C !default;
+$gray-800: #6F7275 !default;
+$gray-900: #5E6163 !default;
+$gray-1000: #4B4D4F !default;
+$gray-1100: #353738 !default;
+$gray-1200: #222324 !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -77,14 +77,14 @@ $grays: map-merge(
 //*-----------------------------------------------
 //|   Solid Colors
 //-----------------------------------------------*/
-$blue: #4E92F9 !default;
-$indigo: #8845FF !default;
-$purple: #C46DE3 !default;
+$blue: #1478FC !default;
+$indigo: #5022E2 !default;
+$purple: #764BA2 !default;
 $pink: #EE6BFA !default;
-$red: #EB6453 !default;
+$red: #FD7D72 !default;
 $orange: #F0980E !default;
-$yellow: #EFAB18 !default;
-$green: #96D121 !default;
+$yellow: #FE9A52 !default;
+$green: #4FBF67 !default;
 $teal: #18DEBC !default;
 $cyan: #21D4DF !default;
 $light: #F9FAFD !default;
@@ -92,7 +92,7 @@ $light: #F9FAFD !default;
 //*-----------------------------------------------
 //|   Theme Colors
 //-----------------------------------------------*/
-$primary: $blue !default;
+$primary: $indigo !default;
 $secondary: $purple !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -212,7 +212,7 @@ $spacers: map-merge(
 //|   Body
 //-----------------------------------------------*/
 $body-bg: $white !default;
-$body-color: $gray-500 !default;
+$body-color: $gray-1000 !default;
 
 //*-----------------------------------------------
 //|   Link
@@ -230,12 +230,12 @@ $border-radius-lg: 1.25rem !default;
 //*-----------------------------------------------
 //|   Fonts Families
 //-----------------------------------------------*/
-$font-family-sans-serif: 'Nunito', 'Open Sans', -apple-system, BlinkMacSystemFont,
+$font-family-sans-serif: 'Exo 2', 'Open Sans', -apple-system, BlinkMacSystemFont,
   'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 $font-family-monospace: 'SFMono-Regular', Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
-$font-family-base: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+$font-family-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 
@@ -319,13 +319,13 @@ $blockquote-font-size: $font-size-lg !default;
 //-----------------------------------------------*/
 $input-bg           :  tint-color($gray-300, 90) !default;
 $input-placeholder-color:     tint-color($gray-300, 10) !important;
-$input-btn-padding-y: .5rem !default;
+$input-btn-padding-y: .7rem !default;
 $input-btn-padding-x: 1.5rem !default;
 
-$input-btn-padding-y-sm: .10rem !default;
-$input-btn-padding-x-sm: 0.5rem !default;
+$input-btn-padding-y-sm: .5rem !default;
+$input-btn-padding-x-sm: 1.2rem !default;
 
-$input-btn-padding-y-lg: .7rem !default;
+$input-btn-padding-y-lg: .8rem !default;
 $input-btn-padding-x-lg: 1.8rem !default;
 $input-btn-font-size-lg:  $font-size-base !default;
 
@@ -344,7 +344,7 @@ $btn-border-radius-lg: .625rem !default;
 //-----------------------------------------------*/
 $navbar-font-size: $font-size-base * 0.8 !default;
 
-$navbar-light-color: rgba($black, 0.95) !default;
+$navbar-light-color: $gray-700 !default;
 $navbar-light-hover-color: rgba($black, 0.95) !default;
 $navbar-light-active-color: $gray-700 !default;
 $navbar-light-disabled-color: rgba($black, 0.25) !default;

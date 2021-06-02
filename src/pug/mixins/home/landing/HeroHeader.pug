@@ -1,17 +1,21 @@
 mixin HeroHeader
   section#home
-    +Background({ image: `${CWD}assets/img/illustrations/hero.png`, attrs: { style: { 'background-position': 'right bottom',} }, className: 'd-none d-md-block bg-size' })
-    +Background({image: `${CWD}assets/img/illustrations/heroheader-bg.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'contain',} }, className: '' })
     .container
-      .row.align-items-center
+      .row.align-items-center.g-2
+        .col-md-5.col-lg-6.order-1.text-end
+          img(src=`${CWD}assets/img/gallery/hero-header.gif`   alt='hero-header').w-100
         .col-md-7.col-lg-6.py-6.text-sm-start.text-center
-          h1.fw-bold.display-4.fs-4.fs-lg-6.fs-xxl-7.text-gradient  Bootstrap 5 theme
-          h1.text-700 crafted by 
-            span.fw-bold ThemeWagon
-          p.mb-5.fs-0 We’ve spent the last 7 years helping over 
-            span.fw-bold.text-primary 1 million people 
-            br 
-            |like yourself to create stunning websites with minimum effort
-          a.btn.hover-top.btn-glow.btn-klean(href='#')
-            | Check Demo
+          h6.fs-0.text-uppercase.fw-bold.text-600 Top Business App
+          h1.fw-bold.fs-4.fs-lg-6.fs-xxl-7.text-primary  The plaform for
+            br
+            | better cooperation
+          p.mb-5.fs-1.fw-medium Crafted with care &amp; creativity. Brings together 
+            br.d-none.d-xl-block 
+            |everthing in one place.
+          a.btn.hover-top.btn-collab(href='#!')
+            i.fas.fa-download.me-2
+            |  DOWNLOAD
+          a.btn.hover-top.btn-collab-outline.text-gradient.ms-2(href='#!') 
+            i.fas.fa-play.text-danger.me-2
+            |  CHECK DEMO
             

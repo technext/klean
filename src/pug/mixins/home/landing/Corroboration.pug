@@ -1,0 +1,47 @@
+append variables
+  -
+    var corroboration = [
+      {
+        image:'corroboration.png',
+        order: 'order-1',
+        preTitle:'corroboration',
+        title:'Keeping All Elements Together To Present The Project',
+        text:'While the project is shared between several members, the resources need to be at one place to maintain the clarity of the project, and flexibility among developers.'
+      },
+
+    ]
+
+  -
+    var Cfeatures = [
+      { 
+        icon:'fas fa-video',
+        iconBg:'bg-white',
+        iconColor:'text-warning',
+        title:'Write it up',
+        text:'Communicating through video on elaborate workflow and understanding.'
+      },
+      {
+        icon:'far fa-comment-dots',
+        iconBg:'bg-white',
+        iconColor:'text-warning',
+        title:'Show to others menu',
+        text:'Stay communicated with all the colleagues and brush up your social skill.'
+      },
+      {
+        icon:'far fa-image',
+        iconBg:'bg-white',
+        iconColor:'text-warning',
+        title:'Storing at the cloud',
+        text:'Click it and share the top quality images to all the member of your group.'
+      },
+
+
+    ]  
+
+mixin Corroboration 
+  +Section.py-6(style="background:linear-gradient(180deg, #FFFEFC -54.51%, #FFF8F0 99.98%);")
+    .row.align-items-center
+      +PartnershipCorroboration(corroboration[0])
+    .row
+      each item in Cfeatures
+        +Feature(item)  

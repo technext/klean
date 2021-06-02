@@ -1,0 +1,46 @@
+append variables
+  -
+    var partnership = [
+      {
+        image:'partnership.png',
+        preTitle:'partnership',
+        title:'Build strong partnership & organizations',
+        text:'Bring all your document under one place and make it <br> easy to share with other in no time. That makes the <br>whole process comfortable.'
+      },
+
+    ]
+
+  -
+    var Pfeatures = [
+      { 
+        icon:'far fa-edit',
+        iconBg:'bg-soft-danger',
+        iconColor:'text-danger',
+        title:'Write it up',
+        text:'Write it down whenever you feel for it, as each details matter and stay.'
+      },
+      {
+        icon:'fas fa-tv',
+        iconBg:'bg-soft-danger',
+        iconColor:'text-danger',
+        title:'Show to others menu',
+        text:'Share effective and important data to your partner.'
+      },
+      {
+        icon:'fas fa-cloud',
+        iconBg:'bg-soft-danger',
+        iconColor:'text-danger',
+        title:'Storing at the cloud',
+        text:'Save your valuable info to get all the resources under one platform as a unit.'
+      },
+
+
+    ]  
+
+mixin Partnership 
+  +Section.py-6 
+    .row.align-items-center
+      +PartnershipCorroboration(partnership[0])
+    .row
+      each item in Pfeatures
+        +Feature(item)  
