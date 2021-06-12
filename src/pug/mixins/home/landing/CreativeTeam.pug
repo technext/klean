@@ -1,30 +1,30 @@
-mixin ProductTeam
-  section.circle-blend.circle-blend-left.circle-primary
+mixin CreativeTeam
+  section
     +Background({image: `${CWD}assets/img/illustrations/product-bg-1.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover',} }, className: '' })
     +Background({image: `${CWD}assets/img/illustrations/product-bg-2.png`, attrs: { style: { 'background-position': 'left top', 'background-size': 'contain',} }, className: 'mt-n4' })
     .container-xl
-      .row.flex-center
+      .row.flex-center.circle-blend.circle-blend-left-product.circle-cyan
         .col-auto
           .card.product-card-bg.square.shadow-square-bottom
             .card-body.p-4
               img.img-fluid.border-img(src=`${CWD}assets/img/gallery/product.png` width='350'  alt='...')
         .col-lg-6.ms-lg-auto.my-7.my-lg-0.px-sm-8.px-lg-0.ps-lg-2.ps-xl-0
           +InfoText({
-            title:'A product team which <br> creates amazing UI/UX',
-            details:'I cant do that as Bruce Wayne... as a man.Im flesh and blood. I can be ignored, destroyed. But as a symbol, I can be incorruptible, I can be everlasting.',
+            title:'A creative team which <br> builds stunning UI/UX',
+            details:`Today, I'd like to show you some incredible Sign Up screen app UI ideas and concepts that offer a modern user experience.The most stunning, cutting-edge UI/UX.`,
             text:' Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span>',
             buttonText:'Read More'
           })
-      .row.flex-center.pt-10.pt-md-6.pt-lg-10.circle-blend.circle-primary
-        .col-auto.ms-lg-auto.order-md-1.text-center.circle-blend.circle-blend-right.circle-danger
+      .row.flex-center.pt-10.pt-md-6.pt-lg-10.circle-blend.circle-blend-right-dedicated.circle-danger
+        .col-auto.ms-lg-auto.order-md-1.text-center
           .card.product-card-bg.square.shadow-square-top
             .card-body.p-4
               img.img-fluid.border-img(src=`${CWD}assets/img/gallery/dedicate.png` width='350'  alt='...')
-        .col-lg-6.order-1.order-lg-0.ms-xl-auto.my-7.my-lg-0.px-sm-8.px-lg-0.me-lg-auto.ps-xl-0
+        .col-lg-6.order-1.order-lg-0.ms-xl-auto.my-7.my-xl-0.px-sm-8.px-lg-3.px-xl-0.me-xl-auto.ps-xl-0
           +InfoText({
-            title:'Dedicated to redefine<br> the cutting edge.',
-            details:'Bruce Wayne, eccentric billionaire. It was a dog. It was a big dog. Bats frighten me. Its time my enemies shared my dread. No guns, no killing. Its ends here. It was a dog. It was a big dog.',
-            text:' Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by <span class="fw-bold">ThemeWagon</span>',
+            title:'Devoted to defining <br> the cutting edge.',
+            details:`"This new creation is cutting-edge technology," says the researcher, "whose study originates from a business at the forefront of space science."`,
+            text:'Klean is a free Bootstrap 5 template for multipurpose landing pages. This design is a perfect choice, carefully curated by  <span class="fw-bold">ThemeWagon</span>',
             buttonText:'Read More'
           })
         

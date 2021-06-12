@@ -6,42 +6,42 @@ append variables
         color:'danger',
         title:'Encrypted Mail',
         iconWrapper:'icon-wrapper shadow-danger',
-        text:'Bits of moving fluff encyclopaedia galactica are creatures'
+        text:'A process of encrypting email communications'
       },
       {
         icon:'monitor',
         color:'primary',
         iconWrapper:'icon-wrapper shadow-primary',
-        title:'Screen Sharing',
-        text:'Finite but unbounded quasar a mote of dust suspended'
+        title:'Display Sharing',
+        text:'With other participants, you may share your screen'
       },
       {
         icon:'book',
         color:'warning',
         iconWrapper:'icon-wrapper shadow-warning',
-        title:'Personal Logbook',
-        text:'Paroxysm of global death kindling the energy hidden in matter'
+        title:'Private Notebook',
+        text:'Private Notebook is an application that is protected'
       },
        {
         icon:'tablet',
         color:'success',
         iconWrapper:'icon-wrapper shadow-success',
-        title:'App Support',
-        text:'Extraordinary claims require extraordinary evidence emerged'
+        title:'App App Assistance',
+        text:'App Assistant is quickly and effectively ran the system'
       },
        {
         icon:'printer',
         color:'secondary',
         iconWrapper:'icon-wrapper shadow-secondary',
         title:'Multiple Printing',
-        text:'Kindling the energy hidden in matter stirred by starlight'
+        text:'Our canvas prints are crafted on top-notch canvas.'
       },
        {
         icon:'edit-2',
         color:'info',
         iconWrapper:'icon-wrapper shadow-info',
         title:'Free Sketch',
-        text:'Hypatia brain is the seed of intelligence citizens of distant epochs dream'
+        text:'Our canvas prints are crafted on top-notch canvas.'
       },
     ]
 
@@ -55,12 +55,13 @@ mixin Feature(config)
       p.mb-md-0.px-xxl-6=config.text
 
 mixin Features
-  +Section.py-5#feature
+  section#feature.py-5.circle-blend.circle-blend-right-feature.circle-cyan
     +Background({image: `${CWD}assets/img/illustrations/feature-bg.png`, attrs: { style: { 'background-position': 'right', 'background-size': 'auto',} }, className: '' })
-    .row.justify-content-center.mb-6
-      .col-lg-6.text-center.mx-auto.mb-3.mb-md-5.mt-4
-        h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Features
-        p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by ThemeWagon
-    .row.circle-blend.circle-blend-right.circle-cyan
-      each feature in features 
-        +Feature(feature)    
+    .container
+      .row.justify-content-center.mb-6
+        .col-lg-6.text-center.mx-auto.mb-3.mb-md-5.mt-4
+          h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Features
+          p.mb-0 We provide a number of excellent features that will undoubtedly improve the user experience. We also provide a better support system
+      .row.circle-blend.circle-blend-left-feature.circle-primary 
+        each feature in features 
+          +Feature(feature)    

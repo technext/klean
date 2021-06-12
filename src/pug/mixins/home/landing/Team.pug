@@ -38,17 +38,16 @@ mixin TeamMember(config)
     div(class=`${config.shadowClass}`)
       img(src=`${CWD}assets/img/gallery/${config.image}` width='200' alt='...' class=`${config.teamBg}`)
     
-    h5.fw-bold.mt-4.mb-1=config.name
+    h5.text-800.fw-bold.mt-4.mb-1=config.name
     p=config.designation
 
 mixin Team
   +Section.pb-0('container container-lg-fluid container-xl')
     +Background({image: `${CWD}assets/img/illustrations/team-bg.png`, attrs: { style: { 'background-position': 'left top', 'background-size': 'auto',} }, className: '' })
-    .row.justify-content-center.mb-6.circle-blend.circle-warning
+    .row.justify-content-center.mb-6
       .col-lg-6.text-center.mx-auto.mb-7
         h5.fw-bold.fs-3.fs-lg-5.lh-sm.mb-3 Our Team
-        p.mb-0 Klean is an elegant HTML5 template and a perfect starting point for your next SaaS oriented site, carefully curated by 
-          span.fw-bold ThemeWagon
+        p.mb-0 People from various origins, cultures, and personalities make up our team. This blend makes it a powerful team
       .col-xxl-9
         .row.flex-center.g-0
           each item in teams
