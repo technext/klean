@@ -18583,7 +18583,7 @@ ul {
 }
 
 .product-card-bg {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2.875rem);
   backdrop-filter: blur(2.875rem);
   border: 0.125rem solid #fff;
